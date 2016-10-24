@@ -8,7 +8,13 @@
 
 import UIKit
 
-class MainVC: BaseVC {
+// MARK: - Navigation protocole
+protocol NaviGationProtocole{
+    func protocolPushViewController(vc : UIViewController)
+    func protocolPresentViewController(vc : UIViewController , animated : Bool)
+}
+
+class MainVC: BaseVC , NaviGationProtocole{
 
     // MARK: - Variables and outlets
     @IBOutlet weak var mainCollection: MainCollection!
@@ -23,6 +29,8 @@ class MainVC: BaseVC {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        NavigationManager.sharedManager.naviGationProtocole = self
+
     }
 
     // MARK: - Initializers
@@ -30,4 +38,11 @@ class MainVC: BaseVC {
         self.mainCollection.initCollection()
     }
     
+    
+    func protocolPushViewController(vc : UIViewController){
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    func protocolPresentViewController(vc : UIViewController, animated : Bool){
+        self.navigationController?.present(vc, animated: animated, completion: nil)
+    }
 }

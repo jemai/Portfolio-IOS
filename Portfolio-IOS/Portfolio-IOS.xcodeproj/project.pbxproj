@@ -17,6 +17,7 @@
 		C069C0DD1DBDFAF100F64DE9 /* LabelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D41DBDFAF100F64DE9 /* LabelUtils.swift */; };
 		C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */; };
 		C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */; };
+		C069C0E31DBDFBA500F64DE9 /* ScrollerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E21DBDFBA500F64DE9 /* ScrollerManager.swift */; };
 		C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */; };
 		C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */; };
 		C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		C069C0D41DBDFAF100F64DE9 /* LabelUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelUtils.swift; sourceTree = "<group>"; };
 		C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
+		C069C0E21DBDFBA500F64DE9 /* ScrollerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollerManager.swift; sourceTree = "<group>"; };
 		C0BD2D4B1DBD4D6A00CC7D88 /* Portfolio-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Portfolio-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */,
+				C069C0E21DBDFBA500F64DE9 /* ScrollerManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				C069C0DA1DBDFAF100F64DE9 /* UIViewExtensions.swift in Sources */,
 				C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */,
 				C0BD2DAC1DBD7A8E00CC7D88 /* MenuModel.swift in Sources */,
+				C069C0E31DBDFBA500F64DE9 /* ScrollerManager.swift in Sources */,
 				C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */,
 				C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */,
 				C0BD2DA91DBD78A200CC7D88 /* MenuCell.swift in Sources */,

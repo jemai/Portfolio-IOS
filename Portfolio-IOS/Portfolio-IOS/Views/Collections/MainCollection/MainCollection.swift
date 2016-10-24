@@ -12,6 +12,7 @@ protocol MainCollectionDelegate {
     func scrollMainToIndex(index : IndexPath)
     func scrollToFirstCell()
 }
+//
 class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate , MainCollectionDelegate{
     
     
@@ -31,7 +32,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.register(mainCell, forCellWithReuseIdentifier: "MainCell")
         self.register(aboutCell, forCellWithReuseIdentifier: "AboutCell")
         self.backgroundColor = UIColor.white
-        
+        ScrollerManager.sharedManager.scrollingProtocole = self
     }
     //
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,27 +45,27 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         switch indexPath.row {
         case 0:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            cell.mainCollectionDelegate = self
+            //cell.mainCollectionDelegate = self
             return cell
             
         case 1:
             let cell : AboutCell = dequeueReusableCell(withReuseIdentifier: "AboutCell", for: indexPath) as! AboutCell
-            cell.mainCollectionDelegate = self
+            //cell.mainCollectionDelegate = self
             return cell
             
         case 2:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            cell.mainCollectionDelegate = self
+            //cell.mainCollectionDelegate = self
             return cell
             
         case 3:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            cell.mainCollectionDelegate = self
+            //cell.mainCollectionDelegate = self
             return cell
             
         case 4:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            cell.mainCollectionDelegate = self
+            //cell.mainCollectionDelegate = self
             return cell
             
         default:

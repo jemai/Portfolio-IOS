@@ -3,7 +3,7 @@
 //  MOBILE_BANKING_IOS
 //
 //  Created by Abdelhak Jemaii on 29/09/16.
-//  Copyright © 2016 Digit-u. All rights reserved.
+//  Copyright © 2016 Abdelhak Jemaii. All rights reserved.
 //
 
 import UIKit
@@ -25,18 +25,6 @@ extension UILabel {
         return attributedText.heightWithWidth(width)
     }
     //
-    func setStyle(_ style : LabelStyle){
-        self.textColor =  style.textColor
-        //self.shadowOffset = CGSizeMake(0.0, 1.0)
-        self.font = style.font
-    }
-    //
-    func setAccessibility(_ access : LabelAccessabilitie){
-        if let textToSet = LanguageManager.sharedManager.getStringForKey(key: access.textKey){
-            self.text = textToSet
-        }
-        self.setStyle(access.style)
-    }
 }
 
 

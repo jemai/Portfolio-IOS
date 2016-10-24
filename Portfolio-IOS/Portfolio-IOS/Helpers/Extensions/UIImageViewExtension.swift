@@ -3,7 +3,7 @@
 //  MOBILE_BANKING_IOS
 //
 //  Created by Abdelhak Jemaii on 29/09/16.
-//  Copyright © 2016 Digit-u. All rights reserved.
+//  Copyright © 2016 Abdelhak Jemaii. All rights reserved.
 //
 
 import UIKit

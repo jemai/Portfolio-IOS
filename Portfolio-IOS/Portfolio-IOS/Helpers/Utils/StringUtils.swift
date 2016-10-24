@@ -2,8 +2,8 @@
 //  StringUtils.swift
 //  MOBILE_BANKING_IOS
 //
-//  Created by Aymen Chouirfi on 8/26/16.
-//  Copyright © 2016 Aymen Chouirfi. All rights reserved.
+//  Created by Abdelhak Jemaii on 24/10/16.
+//  Copyright © 2016 Abdelhak Jemaii. All rights reserved.
 //
 
 import UIKit
