@@ -9,7 +9,7 @@
 import UIKit
 
 class SharedCardCell: UITableViewCell {
-
+     
     // MARK: - Variables & outlets
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
