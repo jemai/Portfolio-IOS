@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */; };
+		C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */; };
+		C069C0D81DBDFAF100F64DE9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */; };
+		C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CF1DBDFAF100F64DE9 /* UILabelExtensions.swift */; };
+		C069C0DA1DBDFAF100F64DE9 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D01DBDFAF100F64DE9 /* UIViewExtensions.swift */; };
+		C069C0DB1DBDFAF100F64DE9 /* DefaultUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D21DBDFAF100F64DE9 /* DefaultUtils.swift */; };
+		C069C0DC1DBDFAF100F64DE9 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D31DBDFAF100F64DE9 /* FileUtils.swift */; };
+		C069C0DD1DBDFAF100F64DE9 /* LabelUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D41DBDFAF100F64DE9 /* LabelUtils.swift */; };
+		C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */; };
+		C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */; };
 		C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */; };
 		C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */; };
 		C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */; };
@@ -49,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		C069C0CF1DBDFAF100F64DE9 /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		C069C0D01DBDFAF100F64DE9 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		C069C0D21DBDFAF100F64DE9 /* DefaultUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultUtils.swift; sourceTree = "<group>"; };
+		C069C0D31DBDFAF100F64DE9 /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		C069C0D41DBDFAF100F64DE9 /* LabelUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelUtils.swift; sourceTree = "<group>"; };
+		C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		C0BD2D4B1DBD4D6A00CC7D88 /* Portfolio-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Portfolio-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +124,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C069C0CB1DBDFAF100F64DE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */,
+				C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */,
+				C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */,
+				C069C0CF1DBDFAF100F64DE9 /* UILabelExtensions.swift */,
+				C069C0D01DBDFAF100F64DE9 /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C069C0D11DBDFAF100F64DE9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C069C0D21DBDFAF100F64DE9 /* DefaultUtils.swift */,
+				C069C0D31DBDFAF100F64DE9 /* FileUtils.swift */,
+				C069C0D41DBDFAF100F64DE9 /* LabelUtils.swift */,
+				C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		C069C0DF1DBDFB2800F64DE9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		C0BD2D421DBD4D6A00CC7D88 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +178,7 @@
 		C0BD2D4D1DBD4D6A00CC7D88 /* Portfolio-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				C069C0DF1DBDFB2800F64DE9 /* Managers */,
 				C0BD2D831DBD4E1000CC7D88 /* Controllers */,
 				C0BD2D841DBD4E1000CC7D88 /* Helpers */,
 				C0BD2D871DBD4E1000CC7D88 /* Repo */,
@@ -181,6 +233,8 @@
 		C0BD2D841DBD4E1000CC7D88 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C069C0CB1DBDFAF100F64DE9 /* Extensions */,
+				C069C0D11DBDFAF100F64DE9 /* Utils */,
 				C0BD2D851DBD4E1000CC7D88 /* BaseConstants */,
 				C0BD2D861DBD4E1000CC7D88 /* Extensions */,
 			);
@@ -470,14 +524,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C069C0DD1DBDFAF100F64DE9 /* LabelUtils.swift in Sources */,
+				C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */,
+				C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */,
 				C0BD2DA61DBD782100CC7D88 /* MenuCollection.swift in Sources */,
+				C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */,
+				C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */,
+				C069C0DB1DBDFAF100F64DE9 /* DefaultUtils.swift in Sources */,
 				C0BD2D961DBD505600CC7D88 /* MainCollection.swift in Sources */,
 				C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */,
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,
 				C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */,
+				C069C0DC1DBDFAF100F64DE9 /* FileUtils.swift in Sources */,
 				C0BD2D911DBD4EE600CC7D88 /* MainVC.swift in Sources */,
+				C069C0D81DBDFAF100F64DE9 /* UIImageViewExtension.swift in Sources */,
+				C069C0DA1DBDFAF100F64DE9 /* UIViewExtensions.swift in Sources */,
 				C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */,
 				C0BD2DAC1DBD7A8E00CC7D88 /* MenuModel.swift in Sources */,
+				C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */,
 				C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */,
 				C0BD2DA91DBD78A200CC7D88 /* MenuCell.swift in Sources */,
 				C0BD2D9E1DBD513000CC7D88 /* MainCell.swift in Sources */,
@@ -741,6 +805,7 @@
 				C0BD2D751DBD4D6B00CC7D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BD2D761DBD4D6B00CC7D88 /* Build configuration list for PBXNativeTarget "Portfolio-IOSTests" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +814,7 @@
 				C0BD2D781DBD4D6B00CC7D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0BD2D791DBD4D6B00CC7D88 /* Build configuration list for PBXNativeTarget "Portfolio-IOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +823,7 @@
 				C0BD2D7B1DBD4D6B00CC7D88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
