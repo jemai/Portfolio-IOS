@@ -21,6 +21,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     var flowLayou : UICollectionViewFlowLayout!
     var mainCell = UINib(nibName: "MainCell", bundle:nil)
     var aboutCell = UINib(nibName: "AboutCell", bundle:nil)
+    var projectCollectionCell = UINib(nibName: "ProjectCollectionCell", bundle:nil)
     
     //
     func initCollection(){
@@ -31,6 +32,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.collectionViewLayout = flowLayou
         self.register(mainCell, forCellWithReuseIdentifier: "MainCell")
         self.register(aboutCell, forCellWithReuseIdentifier: "AboutCell")
+        self.register(projectCollectionCell, forCellWithReuseIdentifier: "ProjectCollectionCell")
         self.backgroundColor = UIColor.white
         ScrollerManager.sharedManager.scrollingProtocole = self
     }
@@ -45,33 +47,27 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         switch indexPath.row {
         case 0:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            //cell.mainCollectionDelegate = self
             return cell
             
         case 1:
             let cell : AboutCell = dequeueReusableCell(withReuseIdentifier: "AboutCell", for: indexPath) as! AboutCell
-            //cell.mainCollectionDelegate = self
             return cell
             
         case 2:
-            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            //cell.mainCollectionDelegate = self
+            let cell : ProjectCollectionCell = dequeueReusableCell(withReuseIdentifier: "ProjectCollectionCell", for: indexPath) as! ProjectCollectionCell
             return cell
             
         case 3:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            //cell.mainCollectionDelegate = self
             return cell
             
         case 4:
             let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-            //cell.mainCollectionDelegate = self
             return cell
             
         default:
             return UICollectionViewCell()
         }
-        
     }
     //
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
