@@ -21,8 +21,8 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="Grp-Zl-ktx" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="Y1j-7a-wej"/>
-                <constraint firstItem="Grp-Zl-ktx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="dRt-qK-eAJ"/>
+                <constraint firstItem="Grp-Zl-ktx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="GNE-jn-YFS"/>
+                <constraint firstAttribute="bottom" secondItem="Grp-Zl-ktx" secondAttribute="bottom" id="MWw-lU-ONe"/>
                 <constraint firstItem="Grp-Zl-ktx" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="jPs-p6-vZJ"/>
                 <constraint firstItem="Grp-Zl-ktx" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qhl-AT-p0V"/>
             </constraints>

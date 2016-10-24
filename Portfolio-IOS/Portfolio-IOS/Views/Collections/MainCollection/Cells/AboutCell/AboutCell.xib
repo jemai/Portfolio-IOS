@@ -18,12 +18,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="225" height="274"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Pv-vzm">
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                        </accessibility>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaO-Kb-3LD">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zh-yG-Wy0">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_pic" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-Pv-vzm">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="lbd-Pv-vzm" firstAttribute="centerX" secondItem="8zh-yG-Wy0" secondAttribute="centerX" id="3df-vm-ycN"/>
+                            <constraint firstItem="lbd-Pv-vzm" firstAttribute="centerY" secondItem="8zh-yG-Wy0" secondAttribute="centerY" id="Qs0-jG-gnG"/>
+                            <constraint firstItem="lbd-Pv-vzm" firstAttribute="width" secondItem="8zh-yG-Wy0" secondAttribute="width" multiplier="0.5" id="s10-Cx-zgC"/>
+                            <constraint firstItem="lbd-Pv-vzm" firstAttribute="height" secondItem="8zh-yG-Wy0" secondAttribute="height" id="wTY-kq-NkW"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaO-Kb-3LD">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -31,16 +41,23 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="lbd-Pv-vzm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="3jH-K0-Vlu"/>
-                <constraint firstItem="lbd-Pv-vzm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="68n-Sf-4wp"/>
-                <constraint firstItem="PaO-Kb-3LD" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.9" id="LBe-1c-lQn"/>
-                <constraint firstItem="PaO-Kb-3LD" firstAttribute="top" secondItem="lbd-Pv-vzm" secondAttribute="bottom" multiplier="1.2" id="LuS-OZ-PVD"/>
-                <constraint firstItem="lbd-Pv-vzm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.4" id="TFd-tm-bZf"/>
+                <constraint firstItem="8zh-yG-Wy0" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.3" id="BUB-2e-WR2"/>
+                <constraint firstItem="8zh-yG-Wy0" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="Hpd-1r-0u8"/>
+                <constraint firstItem="PaO-Kb-3LD" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="LBe-1c-lQn"/>
+                <constraint firstItem="8zh-yG-Wy0" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="U2j-70-Ahv"/>
                 <constraint firstItem="PaO-Kb-3LD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerXWithinMargins" id="VQx-cW-kZN"/>
-                <constraint firstItem="lbd-Pv-vzm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="dYr-P9-QM4"/>
+                <constraint firstItem="PaO-Kb-3LD" firstAttribute="top" secondItem="lbd-Pv-vzm" secondAttribute="bottom" constant="8" id="dCR-0g-D75"/>
+                <constraint firstItem="8zh-yG-Wy0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="q3c-6a-ZB9"/>
             </constraints>
             <size key="customSize" width="225" height="274"/>
+            <connections>
+                <outlet property="abouttext" destination="PaO-Kb-3LD" id="Aiy-TB-udQ"/>
+                <outlet property="imageHolder" destination="8zh-yG-Wy0" id="a5p-d3-Iox"/>
+            </connections>
             <point key="canvasLocation" x="41.5" y="130"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="my_pic" width="66" height="66"/>
+    </resources>
 </document>

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -27,7 +28,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-VC-TBQ">
-                    <state key="normal" image="ic_menu"/>
+                    <state key="normal" image="ic_home_B"/>
                     <connections>
                         <action selector="backToMainCellAction:" destination="-1" eventType="touchUpInside" id="WYA-8Z-oZC"/>
                     </connections>
@@ -37,14 +38,17 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="5ow-VC-TBQ" secondAttribute="bottom" constant="16" id="Jgi-Gz-38H"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nsv-g0-4lO"/>
+                <constraint firstItem="5ow-VC-TBQ" firstAttribute="width" secondItem="cyv-ac-4AW" secondAttribute="width" multiplier="0.15" id="SpW-hy-Isd"/>
+                <constraint firstItem="5ow-VC-TBQ" firstAttribute="height" secondItem="cyv-ac-4AW" secondAttribute="height" multiplier="0.1" id="Tof-l8-uQZ"/>
                 <constraint firstAttribute="trailing" secondItem="5ow-VC-TBQ" secondAttribute="trailing" constant="16" id="fn8-DD-mUm"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fyz-5M-BxA"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="rST-oV-rnF"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="s20-oV-mSa"/>
             </constraints>
+            <point key="canvasLocation" x="102.5" y="77.5"/>
         </view>
     </objects>
     <resources>
-        <image name="ic_menu" width="23" height="18"/>
+        <image name="ic_home_B" width="213" height="212"/>
     </resources>
 </document>

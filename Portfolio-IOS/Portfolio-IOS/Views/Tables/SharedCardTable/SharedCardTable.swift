@@ -9,24 +9,17 @@
 
 import UIKit
 
-struct SharedCardTableType {
-    static let ProjectState = "ProjectState"
-    static let HobbiesState = "HobbiesState"
-}
-
-
 class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSource {
     
     //MARK: - Variables and outlets
-    var state = ""
     var tableDataSource = [SharedModel]()
     //MARK: - Initializers
-    //MARK: - currency fulter init
     func initTableView(){
         self.delegate = self
         self.dataSource = self
         //
         self.register(UINib(nibName: "SharedCardCell", bundle: nil), forCellReuseIdentifier: "SharedCardCell")
+        self.separatorStyle = .none
     }
     //
     
@@ -55,7 +48,9 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
     }
     //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let details = DetailsVC(nibName: "DetailsVC", bundle: nil)
+        details.model = self.tableDataSource[indexPath.row]
+        NavigationManager.sharedManager.pushViewController(viewController: details)
     }
    
 }

@@ -14,11 +14,15 @@ class SharedCardCell: UITableViewCell {
     @IBOutlet var mainImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     //
+    @IBOutlet weak var holder: UIView!
+    //
     var project : SharedModel?
     //
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        holder.initWithShadow()
+    
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -30,7 +34,7 @@ class SharedCardCell: UITableViewCell {
     func initCell(model : SharedModel){
         self.project = model
         self.mainImage.image = UIImage(named: model.imageName)
-        self.titleLabel.text = model.title
+        self.titleLabel.text = model.title.uppercased()
     }
     
 }

@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +21,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJB-NM-EEf"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6i-ef-8A4">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,7 +35,8 @@
                             <constraint firstAttribute="trailing" secondItem="kJB-NM-EEf" secondAttribute="trailing" id="Hpk-l1-RPU"/>
                             <constraint firstItem="kJB-NM-EEf" firstAttribute="top" secondItem="C9R-6h-pFP" secondAttribute="top" id="h31-1B-ZIM"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="centerX" secondItem="C9R-6h-pFP" secondAttribute="centerX" id="oyv-GE-LdL"/>
-                            <constraint firstItem="H6i-ef-8A4" firstAttribute="top" secondItem="kJB-NM-EEf" secondAttribute="bottom" constant="8" id="vGU-R6-Ktd"/>
+                            <constraint firstItem="H6i-ef-8A4" firstAttribute="top" secondItem="kJB-NM-EEf" secondAttribute="bottom" id="vGU-R6-Ktd"/>
+                            <constraint firstItem="H6i-ef-8A4" firstAttribute="height" secondItem="C9R-6h-pFP" secondAttribute="height" multiplier="0.12" id="yEv-yd-aqp"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -45,6 +48,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="holder" destination="C9R-6h-pFP" id="M8F-BL-322"/>
                 <outlet property="mainImage" destination="kJB-NM-EEf" id="ymE-2O-yB3"/>
                 <outlet property="titleLabel" destination="H6i-ef-8A4" id="Ikr-3q-qgW"/>
             </connections>

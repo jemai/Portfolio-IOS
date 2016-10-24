@@ -9,12 +9,27 @@
 import Foundation
 
 struct CollectionsArrays {
-    static let menuDataSource = [MenuModel(title: "About",image: ""),MenuModel(title: "Projects",image: ""),MenuModel(title: "Contact",image: ""),MenuModel(title: "Hobbies",image: "guitar-icon")]
+    static let menuDataSource = [MenuModel(title: "About",image: "ic_about"),MenuModel(title: "Projects",image: "ic_project"),MenuModel(title: "Contact",image: "ic_contact"),MenuModel(title: "Hobbies",image: "ic_hobbie")]
 }
 
 struct TableArrays {
-    static let hobbiesDataSource = [SharedModel(title: "About",image: "" ,description : ""),SharedModel(title: "Projects",image: "",description : ""),SharedModel(title: "Contact",image: "",description : ""),SharedModel(title: "Hobbies",image: "guitar-icon",description : "")]
+    static let hobbiesDataSource = [SharedModel(title: "A guitar player" ,image: "ic_paul_gilbert" ,description : ""),SharedModel(title: "A bboy",image: "ic_bboy",description : "")]
     //
-    static let projectsDataSource = [SharedModel(title: "About",image: "" ,description : ""),SharedModel(title: "Projects",image: "",description : ""),SharedModel(title: "Contact",image: "",description : ""),SharedModel(title: "Hobbies",image: "guitar-icon",description : "")]
+    static let projectsDataSource = [SharedModel(title: "M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
+    //
+    static let contactDataSource = [ContactModel(image : "" ,link : ""),ContactModel(image : "" ,link : ""),ContactModel(image : "" ,link : "")]
+}
 
+struct LongTexts {
+    //
+    static let AboutText = "Software engineer with through hand-on experience in mobile development IOS and Android. Supportive and enthusiastic team player dedicated to streamlining process and efficiently resolving project issues. Willing to learn more about mobile apps and more about its systems."
+    //
+    static let MbankingDesc = ""
+    //
+    static let DooleshDesc = ""
+    //
+    static let YoupiDesc = ""
+    //
+    static let LitDesc = ""
+    
 }

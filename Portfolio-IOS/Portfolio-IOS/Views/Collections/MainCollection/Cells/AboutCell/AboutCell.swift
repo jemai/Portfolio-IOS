@@ -12,9 +12,14 @@ class AboutCell: UICollectionViewCell {
 
     // MARK: - variables & outlets
     var mainCollectionDelegate : MainCollectionDelegate?
+    //
+    @IBOutlet weak var abouttext: UILabel!
+    @IBOutlet weak var imageHolder: UIView!
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imageHolder.initWithShadow()
+        abouttext.text = LongTexts.AboutText
     }
 
 }

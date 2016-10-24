@@ -13,10 +13,11 @@ class MenuCell: UICollectionViewCell {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
+    @IBOutlet weak var holder: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.backgroundColor = UIColor.white
     }
     // MARK: - Initializer
     func initCell(menuModel : MenuModel){

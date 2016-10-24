@@ -23,9 +23,7 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
         //
         self.dataSource = self
         self.delegate = self
-        self.register(menuCell, forCellWithReuseIdentifier: "MenuCell")
-        self.backgroundColor = UIColor.gray
-        
+        self.register(menuCell, forCellWithReuseIdentifier: "MenuCell")        
     }
     //
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -47,6 +45,6 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
                         sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         let height = collectionView.bounds.size.height/2
         let width = collectionView.bounds.size.width/2
-        return CGSize(width: width - 8,height: height - 8)
+        return CGSize(width: width - 16,height: height - 16)
     }
 }

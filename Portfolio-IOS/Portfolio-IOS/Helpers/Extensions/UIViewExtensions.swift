@@ -8,44 +8,6 @@
 
 import UIKit
 
-extension UIView {
-    
-    
-    func addConstrainsWithFormat(_ format : String, views : UIView...){
-        
-        
-        var viewDictionnary = [String : UIView]()
-        
-        for (index, view) in views.enumerated(){
-            
-            view.translatesAutoresizingMaskIntoConstraints = false
-            let key = "v\(index)"
-            viewDictionnary[key] = view
-        }
-        
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutFormatOptions(), metrics: nil, views: viewDictionnary))
-    }
-}
-
-// MARK: - ReusableView
-protocol ReusableView: class {}
-
-extension ReusableView where Self: UIView {
-    
-    static var reuseIdentifier: String {
-        return String(describing: self)
-    }
-}
-
-// MARK: - NibLoadableView
-protocol NibLoadableView: class { }
-
-extension NibLoadableView where Self: UIView {
-    
-    static var nibName: String {
-        return String(describing: self)
-    }
-}
 
 // MARK: - Centring and binding a view to its super view
 extension UIView {
@@ -62,7 +24,12 @@ extension UIView {
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[subview]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["subview": self]))
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[subview]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["subview": self]))
     }
-    
+    func initWithShadow(){
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize.zero
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 3
+    }
 }
 
 // MARK: - AnimationExtentions

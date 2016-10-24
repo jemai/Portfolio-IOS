@@ -48,6 +48,14 @@
 		C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DAD1DBD7B8700CC7D88 /* BaseConstant.swift */; };
 		C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DBA1DBD9C3100CC7D88 /* AboutCell.swift */; };
 		C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */; };
+		C0BD2DC11DBEB60700CC7D88 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DBF1DBEB60700CC7D88 /* ContactCell.swift */; };
+		C0BD2DC21DBEB60700CC7D88 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DC01DBEB60700CC7D88 /* ContactCell.xib */; };
+		C0BD2DC61DBEB67400CC7D88 /* ContactTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DC51DBEB67400CC7D88 /* ContactTable.swift */; };
+		C0BD2DCD1DBEB6F400CC7D88 /* ContactTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DCB1DBEB6F400CC7D88 /* ContactTableCell.swift */; };
+		C0BD2DCE1DBEB6F400CC7D88 /* ContactTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DCC1DBEB6F400CC7D88 /* ContactTableCell.xib */; };
+		C0BD2DD01DBEB72B00CC7D88 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DCF1DBEB72B00CC7D88 /* ContactModel.swift */; };
+		C0BD2DD41DBEBB0800CC7D88 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DD21DBEBB0800CC7D88 /* DetailsVC.swift */; };
+		C0BD2DD51DBEBB0800CC7D88 /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DD31DBEBB0800CC7D88 /* DetailsVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +123,14 @@
 		C0BD2DAD1DBD7B8700CC7D88 /* BaseConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstant.swift; sourceTree = "<group>"; };
 		C0BD2DBA1DBD9C3100CC7D88 /* AboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
 		C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		C0BD2DBF1DBEB60700CC7D88 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		C0BD2DC01DBEB60700CC7D88 /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		C0BD2DC51DBEB67400CC7D88 /* ContactTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTable.swift; sourceTree = "<group>"; };
+		C0BD2DCB1DBEB6F400CC7D88 /* ContactTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableCell.swift; sourceTree = "<group>"; };
+		C0BD2DCC1DBEB6F400CC7D88 /* ContactTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableCell.xib; sourceTree = "<group>"; };
+		C0BD2DCF1DBEB72B00CC7D88 /* ContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		C0BD2DD21DBEBB0800CC7D88 /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		C0BD2DD31DBEBB0800CC7D88 /* DetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +295,7 @@
 		C0BD2D831DBD4E1000CC7D88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2DD11DBEBAF000CC7D88 /* DetailsVC */,
 				C0BD2DA01DBD775F00CC7D88 /* BaseVC */,
 				C0BD2D8E1DBD4EA700CC7D88 /* MainVC */,
 			);
@@ -340,6 +357,7 @@
 			children = (
 				C0BD2DAB1DBD7A8E00CC7D88 /* MenuModel.swift */,
 				C069C1181DBE3F5200F64DE9 /* SharedModel.swift */,
+				C0BD2DCF1DBEB72B00CC7D88 /* ContactModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -365,6 +383,7 @@
 		C0BD2D8D1DBD4E8600CC7D88 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2DC31DBEB66600CC7D88 /* ContactTable */,
 				C069C11A1DBE415400F64DE9 /* SharedCardTable */,
 			);
 			path = Tables;
@@ -391,6 +410,7 @@
 		C0BD2D941DBD503400CC7D88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2DBE1DBEB5EE00CC7D88 /* ContactCell */,
 				C069C1221DBE423C00F64DE9 /* HobbiesCell */,
 				C069C0EE1DBE04B000F64DE9 /* ProjectCollectionCell */,
 				C0BD2DB51DBD98FE00CC7D88 /* AboutCell */,
@@ -441,6 +461,42 @@
 				C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */,
 			);
 			path = AboutCell;
+			sourceTree = "<group>";
+		};
+		C0BD2DBE1DBEB5EE00CC7D88 /* ContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2DBF1DBEB60700CC7D88 /* ContactCell.swift */,
+				C0BD2DC01DBEB60700CC7D88 /* ContactCell.xib */,
+			);
+			path = ContactCell;
+			sourceTree = "<group>";
+		};
+		C0BD2DC31DBEB66600CC7D88 /* ContactTable */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2DC51DBEB67400CC7D88 /* ContactTable.swift */,
+				C0BD2DC41DBEB66600CC7D88 /* Cell */,
+			);
+			path = ContactTable;
+			sourceTree = "<group>";
+		};
+		C0BD2DC41DBEB66600CC7D88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2DCB1DBEB6F400CC7D88 /* ContactTableCell.swift */,
+				C0BD2DCC1DBEB6F400CC7D88 /* ContactTableCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C0BD2DD11DBEBAF000CC7D88 /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2DD21DBEBB0800CC7D88 /* DetailsVC.swift */,
+				C0BD2DD31DBEBB0800CC7D88 /* DetailsVC.xib */,
+			);
+			path = DetailsVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,10 +614,13 @@
 				C0BD2D811DBD4DFF00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C069C1201DBE415400F64DE9 /* SharedCardCell.xib in Resources */,
 				C0BD2D921DBD4EE600CC7D88 /* MainVC.xib in Resources */,
+				C0BD2DC21DBEB60700CC7D88 /* ContactCell.xib in Resources */,
 				C069C1261DBE425600F64DE9 /* HobbiesCell.xib in Resources */,
 				C0BD2D561DBD4D6A00CC7D88 /* Assets.xcassets in Resources */,
+				C0BD2DCE1DBEB6F400CC7D88 /* ContactTableCell.xib in Resources */,
 				C0BD2D9F1DBD513000CC7D88 /* MainCell.xib in Resources */,
 				C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */,
+				C0BD2DD51DBEBB0800CC7D88 /* DetailsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -595,12 +654,16 @@
 				C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */,
 				C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */,
 				C069C0DB1DBDFAF100F64DE9 /* DefaultUtils.swift in Sources */,
+				C0BD2DD41DBEBB0800CC7D88 /* DetailsVC.swift in Sources */,
 				C0BD2D961DBD505600CC7D88 /* MainCollection.swift in Sources */,
 				C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */,
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,
+				C0BD2DC11DBEB60700CC7D88 /* ContactCell.swift in Sources */,
 				C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */,
+				C0BD2DC61DBEB67400CC7D88 /* ContactTable.swift in Sources */,
 				C069C0DC1DBDFAF100F64DE9 /* FileUtils.swift in Sources */,
 				C069C1191DBE3F5200F64DE9 /* SharedModel.swift in Sources */,
+				C0BD2DCD1DBEB6F400CC7D88 /* ContactTableCell.swift in Sources */,
 				C069C11F1DBE415400F64DE9 /* SharedCardCell.swift in Sources */,
 				C0BD2D911DBD4EE600CC7D88 /* MainVC.swift in Sources */,
 				C069C0F11DBE053200F64DE9 /* ProjectCollectionCell.swift in Sources */,
@@ -612,6 +675,7 @@
 				C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */,
 				C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */,
 				C0BD2DA91DBD78A200CC7D88 /* MenuCell.swift in Sources */,
+				C0BD2DD01DBEB72B00CC7D88 /* ContactModel.swift in Sources */,
 				C0BD2D9E1DBD513000CC7D88 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
