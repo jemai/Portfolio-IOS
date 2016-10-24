@@ -10,6 +10,7 @@ import UIKit
 //protocole to performe actions
 protocol mainCollectionDelegate {
     func scrollMainToIndex(index : IndexPath)
+    func scrollToFirstCell()
 }
 class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate , mainCollectionDelegate{
     
@@ -56,6 +57,11 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     
     // MARK: - Delegate implementations
     func scrollMainToIndex(index: IndexPath) {
+        self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+    }
+    //
+    func scrollToFirstCell(){
+        let index = IndexPath(row: 0, section: 0)
         self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
 
