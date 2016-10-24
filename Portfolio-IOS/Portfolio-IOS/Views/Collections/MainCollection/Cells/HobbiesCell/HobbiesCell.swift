@@ -1,5 +1,5 @@
 //
-//  ProjectCollectionCell.swift
+//  HobbiesCell.swift
 //  Portfolio-IOS
 //
 //  Created by Abdelhak Jemaii on 24/10/16.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-class ProjectCollectionCell: UICollectionViewCell {
-    // MARK: - Variables and outlets
-    @IBOutlet var projectTable: SharedCardTable!
-    
-    
+class HobbiesCell: UICollectionViewCell {
+
+    // MARK: - Variables & outlets
+    @IBOutlet var hobbiesTable: SharedCardTable!
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
-        projectTable.initTableView()
+        self.hobbiesTable.initTableView()
     }
 
 }

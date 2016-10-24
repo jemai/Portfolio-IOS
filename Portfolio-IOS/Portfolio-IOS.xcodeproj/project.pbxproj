@@ -18,11 +18,14 @@
 		C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */; };
 		C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */; };
 		C069C0E31DBDFBA500F64DE9 /* ScrollerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E21DBDFBA500F64DE9 /* ScrollerManager.swift */; };
-		C069C0E91DBE03CA00F64DE9 /* ProjectTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0E81DBE03CA00F64DE9 /* ProjectTable.swift */; };
-		C069C0EC1DBE03F000F64DE9 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0EA1DBE03F000F64DE9 /* ProjectCell.swift */; };
-		C069C0ED1DBE03F000F64DE9 /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C069C0EB1DBE03F000F64DE9 /* ProjectCell.xib */; };
 		C069C0F11DBE053200F64DE9 /* ProjectCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0EF1DBE053200F64DE9 /* ProjectCollectionCell.swift */; };
 		C069C0F21DBE053200F64DE9 /* ProjectCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C069C0F01DBE053200F64DE9 /* ProjectCollectionCell.xib */; };
+		C069C1191DBE3F5200F64DE9 /* SharedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C1181DBE3F5200F64DE9 /* SharedModel.swift */; };
+		C069C11F1DBE415400F64DE9 /* SharedCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C11C1DBE415400F64DE9 /* SharedCardCell.swift */; };
+		C069C1201DBE415400F64DE9 /* SharedCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C069C11D1DBE415400F64DE9 /* SharedCardCell.xib */; };
+		C069C1211DBE415400F64DE9 /* SharedCardTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C11E1DBE415400F64DE9 /* SharedCardTable.swift */; };
+		C069C1251DBE425600F64DE9 /* HobbiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C1231DBE425600F64DE9 /* HobbiesCell.swift */; };
+		C069C1261DBE425600F64DE9 /* HobbiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C069C1241DBE425600F64DE9 /* HobbiesCell.xib */; };
 		C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */; };
 		C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */; };
 		C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */; };
@@ -76,11 +79,14 @@
 		C069C0D51DBDFAF100F64DE9 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		C069C0E01DBDFB2800F64DE9 /* NavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationManager.swift; sourceTree = "<group>"; };
 		C069C0E21DBDFBA500F64DE9 /* ScrollerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollerManager.swift; sourceTree = "<group>"; };
-		C069C0E81DBE03CA00F64DE9 /* ProjectTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTable.swift; sourceTree = "<group>"; };
-		C069C0EA1DBE03F000F64DE9 /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
-		C069C0EB1DBE03F000F64DE9 /* ProjectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
 		C069C0EF1DBE053200F64DE9 /* ProjectCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCollectionCell.swift; sourceTree = "<group>"; };
 		C069C0F01DBE053200F64DE9 /* ProjectCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProjectCollectionCell.xib; sourceTree = "<group>"; };
+		C069C1181DBE3F5200F64DE9 /* SharedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedModel.swift; sourceTree = "<group>"; };
+		C069C11C1DBE415400F64DE9 /* SharedCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCardCell.swift; sourceTree = "<group>"; };
+		C069C11D1DBE415400F64DE9 /* SharedCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SharedCardCell.xib; sourceTree = "<group>"; };
+		C069C11E1DBE415400F64DE9 /* SharedCardTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedCardTable.swift; sourceTree = "<group>"; };
+		C069C1231DBE425600F64DE9 /* HobbiesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbiesCell.swift; sourceTree = "<group>"; };
+		C069C1241DBE425600F64DE9 /* HobbiesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HobbiesCell.xib; sourceTree = "<group>"; };
 		C0BD2D4B1DBD4D6A00CC7D88 /* Portfolio-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Portfolio-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,24 +174,6 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
-		C069C0E41DBE03A600F64DE9 /* ProjectsTable */ = {
-			isa = PBXGroup;
-			children = (
-				C069C0E81DBE03CA00F64DE9 /* ProjectTable.swift */,
-				C069C0E51DBE03A600F64DE9 /* ProjectCell */,
-			);
-			path = ProjectsTable;
-			sourceTree = "<group>";
-		};
-		C069C0E51DBE03A600F64DE9 /* ProjectCell */ = {
-			isa = PBXGroup;
-			children = (
-				C069C0EA1DBE03F000F64DE9 /* ProjectCell.swift */,
-				C069C0EB1DBE03F000F64DE9 /* ProjectCell.xib */,
-			);
-			path = ProjectCell;
-			sourceTree = "<group>";
-		};
 		C069C0EE1DBE04B000F64DE9 /* ProjectCollectionCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +181,33 @@
 				C069C0F01DBE053200F64DE9 /* ProjectCollectionCell.xib */,
 			);
 			path = ProjectCollectionCell;
+			sourceTree = "<group>";
+		};
+		C069C11A1DBE415400F64DE9 /* SharedCardTable */ = {
+			isa = PBXGroup;
+			children = (
+				C069C11E1DBE415400F64DE9 /* SharedCardTable.swift */,
+				C069C11B1DBE415400F64DE9 /* SharedCardCell */,
+			);
+			path = SharedCardTable;
+			sourceTree = "<group>";
+		};
+		C069C11B1DBE415400F64DE9 /* SharedCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				C069C11C1DBE415400F64DE9 /* SharedCardCell.swift */,
+				C069C11D1DBE415400F64DE9 /* SharedCardCell.xib */,
+			);
+			path = SharedCardCell;
+			sourceTree = "<group>";
+		};
+		C069C1221DBE423C00F64DE9 /* HobbiesCell */ = {
+			isa = PBXGroup;
+			children = (
+				C069C1231DBE425600F64DE9 /* HobbiesCell.swift */,
+				C069C1241DBE425600F64DE9 /* HobbiesCell.xib */,
+			);
+			path = HobbiesCell;
 			sourceTree = "<group>";
 		};
 		C0BD2D421DBD4D6A00CC7D88 = {
@@ -324,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				C0BD2DAB1DBD7A8E00CC7D88 /* MenuModel.swift */,
+				C069C1181DBE3F5200F64DE9 /* SharedModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -349,7 +365,7 @@
 		C0BD2D8D1DBD4E8600CC7D88 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
-				C069C0E41DBE03A600F64DE9 /* ProjectsTable */,
+				C069C11A1DBE415400F64DE9 /* SharedCardTable */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -375,6 +391,7 @@
 		C0BD2D941DBD503400CC7D88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C069C1221DBE423C00F64DE9 /* HobbiesCell */,
 				C069C0EE1DBE04B000F64DE9 /* ProjectCollectionCell */,
 				C0BD2DB51DBD98FE00CC7D88 /* AboutCell */,
 				C0BD2D971DBD50FA00CC7D88 /* MainCell */,
@@ -537,10 +554,11 @@
 				C0BD2D591DBD4D6A00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C0BD2D821DBD4DFF00CC7D88 /* Main.storyboard in Resources */,
 				C0BD2DAA1DBD78A200CC7D88 /* MenuCell.xib in Resources */,
-				C069C0ED1DBE03F000F64DE9 /* ProjectCell.xib in Resources */,
 				C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */,
 				C0BD2D811DBD4DFF00CC7D88 /* LaunchScreen.storyboard in Resources */,
+				C069C1201DBE415400F64DE9 /* SharedCardCell.xib in Resources */,
 				C0BD2D921DBD4EE600CC7D88 /* MainVC.xib in Resources */,
+				C069C1261DBE425600F64DE9 /* HobbiesCell.xib in Resources */,
 				C0BD2D561DBD4D6A00CC7D88 /* Assets.xcassets in Resources */,
 				C0BD2D9F1DBD513000CC7D88 /* MainCell.xib in Resources */,
 				C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */,
@@ -569,7 +587,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C069C0DD1DBDFAF100F64DE9 /* LabelUtils.swift in Sources */,
+				C069C1211DBE415400F64DE9 /* SharedCardTable.swift in Sources */,
 				C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */,
+				C069C1251DBE425600F64DE9 /* HobbiesCell.swift in Sources */,
 				C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */,
 				C0BD2DA61DBD782100CC7D88 /* MenuCollection.swift in Sources */,
 				C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */,
@@ -580,7 +600,8 @@
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,
 				C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */,
 				C069C0DC1DBDFAF100F64DE9 /* FileUtils.swift in Sources */,
-				C069C0E91DBE03CA00F64DE9 /* ProjectTable.swift in Sources */,
+				C069C1191DBE3F5200F64DE9 /* SharedModel.swift in Sources */,
+				C069C11F1DBE415400F64DE9 /* SharedCardCell.swift in Sources */,
 				C0BD2D911DBD4EE600CC7D88 /* MainVC.swift in Sources */,
 				C069C0F11DBE053200F64DE9 /* ProjectCollectionCell.swift in Sources */,
 				C069C0D81DBDFAF100F64DE9 /* UIImageViewExtension.swift in Sources */,
@@ -588,7 +609,6 @@
 				C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */,
 				C0BD2DAC1DBD7A8E00CC7D88 /* MenuModel.swift in Sources */,
 				C069C0E31DBDFBA500F64DE9 /* ScrollerManager.swift in Sources */,
-				C069C0EC1DBE03F000F64DE9 /* ProjectCell.swift in Sources */,
 				C069C0DE1DBDFAF100F64DE9 /* StringUtils.swift in Sources */,
 				C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */,
 				C0BD2DA91DBD78A200CC7D88 /* MenuCell.swift in Sources */,

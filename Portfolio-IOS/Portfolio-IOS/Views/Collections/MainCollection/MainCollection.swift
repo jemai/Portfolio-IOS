@@ -34,6 +34,8 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.register(aboutCell, forCellWithReuseIdentifier: "AboutCell")
         self.register(projectCollectionCell, forCellWithReuseIdentifier: "ProjectCollectionCell")
         self.backgroundColor = UIColor.white
+        self.isScrollEnabled = false
+        self.isPagingEnabled = true
         ScrollerManager.sharedManager.scrollingProtocole = self
     }
     //
