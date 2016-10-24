@@ -45,4 +45,7 @@ class MainVC: BaseVC , NaviGationProtocole{
     func protocolPresentViewController(vc : UIViewController, animated : Bool){
         self.navigationController?.present(vc, animated: animated, completion: nil)
     }
+    @IBAction func backToMainCellAction(_ sender: AnyObject) {
+        ScrollerManager.sharedManager.scrollToFirstCell()
+    }
 }
