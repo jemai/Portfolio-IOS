@@ -26,8 +26,8 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-VC-TBQ">
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-VC-TBQ">
+                    <state key="normal" image="ic_menu"/>
                     <connections>
                         <action selector="backToMainCellAction:" destination="-1" eventType="touchUpInside" id="WYA-8Z-oZC"/>
                     </connections>
@@ -44,4 +44,7 @@
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="ic_menu" width="23" height="18"/>
+    </resources>
 </document>
