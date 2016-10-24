@@ -27,13 +27,12 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
         self.dataSource = self
         //
         self.register(UINib(nibName: "SharedCardCell", bundle: nil), forCellReuseIdentifier: "SharedCardCell")
-        reloadRevenusDataSource()
     }
     //
     
     //
     // MARK: - RELOAD DATASROUCE
-    func reloadRevenusDataSource(){
+    func reloadDataSource(){
         self.reloadData()
     }
     

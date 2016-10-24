@@ -22,6 +22,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     var mainCell = UINib(nibName: "MainCell", bundle:nil)
     var aboutCell = UINib(nibName: "AboutCell", bundle:nil)
     var projectCollectionCell = UINib(nibName: "ProjectCollectionCell", bundle:nil)
+    var hobbiesCell = UINib(nibName: "HobbiesCell", bundle:nil)
     
     //
     func initCollection(){
@@ -33,6 +34,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.register(mainCell, forCellWithReuseIdentifier: "MainCell")
         self.register(aboutCell, forCellWithReuseIdentifier: "AboutCell")
         self.register(projectCollectionCell, forCellWithReuseIdentifier: "ProjectCollectionCell")
+        self.register(hobbiesCell, forCellWithReuseIdentifier: "HobbiesCell")
         self.backgroundColor = UIColor.white
         self.isScrollEnabled = false
         self.isPagingEnabled = true
@@ -64,7 +66,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
             return cell
             
         case 4:
-            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+            let cell : HobbiesCell = dequeueReusableCell(withReuseIdentifier: "HobbiesCell", for: indexPath) as! HobbiesCell
             return cell
             
         default:

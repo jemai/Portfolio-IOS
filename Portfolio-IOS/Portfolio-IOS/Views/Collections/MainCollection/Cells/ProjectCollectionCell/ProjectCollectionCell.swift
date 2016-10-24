@@ -10,9 +10,13 @@ import UIKit
 
 class ProjectCollectionCell: UICollectionViewCell {
     // MARK: - Variables and outlets
-    @IBOutlet var projectTable: SharedCardTable!
-    
-    
+    @IBOutlet var projectTable: SharedCardTable!{
+        didSet {
+            projectTable.tableDataSource = TableArrays.projectsDataSource
+            projectTable.reloadDataSource()
+        }
+    }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         projectTable.initTableView()
