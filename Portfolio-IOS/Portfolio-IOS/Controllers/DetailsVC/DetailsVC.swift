@@ -17,7 +17,7 @@ class DetailsVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initViewController()
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +25,6 @@ class DetailsVC: BaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-
    // MARK: - Initializers
     func initViewController(){
         if let model = self.model {

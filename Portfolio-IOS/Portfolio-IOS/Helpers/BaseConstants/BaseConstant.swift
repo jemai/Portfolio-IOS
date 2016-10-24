@@ -17,7 +17,7 @@ struct TableArrays {
     //
     static let projectsDataSource = [SharedModel(title: "M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
     //
-    static let contactDataSource = [ContactModel(image : "" ,link : ""),ContactModel(image : "" ,link : ""),ContactModel(image : "" ,link : "")]
+    static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
 }
 
 struct LongTexts {

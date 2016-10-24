@@ -9,10 +9,14 @@
 import UIKit
 
 class ContactTableCell: UITableViewCell {
-
+    
+    // MARK: - Variables & outlets
+    @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var mainLabel: UILabel!
+    //
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +24,9 @@ class ContactTableCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    // MARK: - Init
+    func initCell(contact : ContactModel){
+        self.mainImage.image = UIImage(named: contact.imageName)
+        self.mainLabel.text = contact.link
+    }
 }

@@ -17,6 +17,7 @@ class ContactCell: UICollectionViewCell {
         // Initialization code
         self.contactTable.tableDataSource = TableArrays.contactDataSource
         self.contactTable.initTableView()
+
     }
 
 }

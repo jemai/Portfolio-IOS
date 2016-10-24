@@ -17,9 +17,9 @@
                 <frame key="frameInset" width="320" height="64"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-sI-nqk"/>
+                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHz-sI-nqk"/>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85Y-Tq-8Wv">
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -27,14 +27,18 @@
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="85Y-Tq-8Wv" secondAttribute="trailing" id="0I6-29-o3m"/>
                     <constraint firstItem="SHz-sI-nqk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AaC-3U-CZo"/>
-                    <constraint firstItem="85Y-Tq-8Wv" firstAttribute="leading" secondItem="SHz-sI-nqk" secondAttribute="trailing" id="BpD-jR-3aH"/>
-                    <constraint firstItem="SHz-sI-nqk" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="K9d-CY-SdZ"/>
+                    <constraint firstItem="85Y-Tq-8Wv" firstAttribute="leading" secondItem="SHz-sI-nqk" secondAttribute="trailing" constant="8" id="BpD-jR-3aH"/>
+                    <constraint firstItem="SHz-sI-nqk" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="K9d-CY-SdZ"/>
                     <constraint firstItem="85Y-Tq-8Wv" firstAttribute="height" secondItem="SHz-sI-nqk" secondAttribute="height" id="Vba-Sv-EPD"/>
                     <constraint firstItem="85Y-Tq-8Wv" firstAttribute="centerY" secondItem="SHz-sI-nqk" secondAttribute="centerY" id="vSM-LQ-qkz"/>
                     <constraint firstItem="SHz-sI-nqk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vel-po-sII"/>
-                    <constraint firstItem="SHz-sI-nqk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.4" id="xmk-kC-4aL"/>
+                    <constraint firstItem="SHz-sI-nqk" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.2" id="xmk-kC-4aL"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="mainImage" destination="SHz-sI-nqk" id="RT9-EY-Kbm"/>
+                <outlet property="mainLabel" destination="85Y-Tq-8Wv" id="94f-g3-7RR"/>
+            </connections>
             <point key="canvasLocation" x="102" y="87.5"/>
         </tableViewCell>
     </objects>

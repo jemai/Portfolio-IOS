@@ -37,7 +37,7 @@ class ContactTable : UITableView , UITableViewDelegate , UITableViewDataSource {
     //
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = self.dequeueReusableCell(withIdentifier: "ContactTableCell") as? ContactTableCell {
-            //cell.initCell(model: tableDataSource[indexPath.row])
+            cell.initCell(contact: tableDataSource[indexPath.row])
             return cell
         }
         return UITableViewCell()    }
