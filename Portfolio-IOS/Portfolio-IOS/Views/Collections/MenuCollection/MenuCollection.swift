@@ -14,7 +14,7 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
     var menuCell = UINib(nibName: "MenuCell", bundle:nil)
     let menuDataSource = CollectionsArrays.menuDataSource
     var flowLayou : UICollectionViewFlowLayout!
-
+    var mainCellDelegate : MainCellDelegate?
     //
     func initCollection(){
         //init layout
@@ -40,7 +40,7 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
     }
     //
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        mainCellDelegate?.scrollMainToIndex(index: indexPath)
     }
     //
     func collectionView(_ collectionView: UICollectionView,

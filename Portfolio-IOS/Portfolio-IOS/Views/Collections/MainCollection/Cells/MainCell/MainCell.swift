@@ -7,16 +7,23 @@
 //
 
 import UIKit
-
-class MainCell: UICollectionViewCell {
-    // MARK: - Outlets
+protocol MainCellDelegate {
+    func scrollMainToIndex(index : IndexPath)
+}
+class MainCell: UICollectionViewCell , MainCellDelegate{
+   
+    // MARK: - variables & Outlets
     @IBOutlet weak var menuCollection: MenuCollection!
-
+    var mainDelegate : mainCollectionDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        menuCollection.mainCellDelegate = self
         menuCollection.initCollection()
     }
-    
+    internal func scrollMainToIndex(index: IndexPath) {
+        mainDelegate?.scrollMainToIndex(index: index)
+    }
+
 }
 

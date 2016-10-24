@@ -7,8 +7,12 @@
 //
 
 import UIKit
-
-class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate {
+//protocole to performe actions
+protocol mainCollectionDelegate {
+    func scrollMainToIndex(index : IndexPath)
+}
+class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate , mainCollectionDelegate{
+    
     
     //MARK : Variables
     var menuDataSource  = [UIColor]()
@@ -33,6 +37,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     //
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+        cell.mainDelegate = self
         cell.backgroundColor = UIColor.red
         return cell
     }
@@ -48,4 +53,10 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         let width = collectionView.bounds.size.width
         return CGSize(width: width,height: height)
     }
+    
+    // MARK: - Delegate implementations
+    func scrollMainToIndex(index: IndexPath) {
+        self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+    }
+
 }
