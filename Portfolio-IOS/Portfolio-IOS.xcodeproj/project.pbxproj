@@ -27,6 +27,8 @@
 		C0BD2DAA1DBD78A200CC7D88 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DA81DBD78A200CC7D88 /* MenuCell.xib */; };
 		C0BD2DAC1DBD7A8E00CC7D88 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DAB1DBD7A8E00CC7D88 /* MenuModel.swift */; };
 		C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DAD1DBD7B8700CC7D88 /* BaseConstant.swift */; };
+		C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2DBA1DBD9C3100CC7D88 /* AboutCell.swift */; };
+		C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		C0BD2DA81DBD78A200CC7D88 /* MenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		C0BD2DAB1DBD7A8E00CC7D88 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		C0BD2DAD1DBD7B8700CC7D88 /* BaseConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConstant.swift; sourceTree = "<group>"; };
+		C0BD2DBA1DBD9C3100CC7D88 /* AboutCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +280,7 @@
 		C0BD2D941DBD503400CC7D88 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C0BD2DB51DBD98FE00CC7D88 /* AboutCell */,
 				C0BD2D971DBD50FA00CC7D88 /* MainCell */,
 			);
 			path = Cells;
@@ -314,6 +319,15 @@
 				C0BD2DA81DBD78A200CC7D88 /* MenuCell.xib */,
 			);
 			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		C0BD2DB51DBD98FE00CC7D88 /* AboutCell */ = {
+			isa = PBXGroup;
+			children = (
+				C0BD2DBA1DBD9C3100CC7D88 /* AboutCell.swift */,
+				C0BD2DBB1DBD9C3100CC7D88 /* AboutCell.xib */,
+			);
+			path = AboutCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +440,7 @@
 				C0BD2D591DBD4D6A00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C0BD2D821DBD4DFF00CC7D88 /* Main.storyboard in Resources */,
 				C0BD2DAA1DBD78A200CC7D88 /* MenuCell.xib in Resources */,
+				C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */,
 				C0BD2D811DBD4DFF00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C0BD2D921DBD4EE600CC7D88 /* MainVC.xib in Resources */,
 				C0BD2D561DBD4D6A00CC7D88 /* Assets.xcassets in Resources */,
@@ -461,6 +476,7 @@
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,
 				C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */,
 				C0BD2D911DBD4EE600CC7D88 /* MainVC.swift in Sources */,
+				C0BD2DBC1DBD9C3100CC7D88 /* AboutCell.swift in Sources */,
 				C0BD2DAC1DBD7A8E00CC7D88 /* MenuModel.swift in Sources */,
 				C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */,
 				C0BD2DA91DBD78A200CC7D88 /* MenuCell.swift in Sources */,

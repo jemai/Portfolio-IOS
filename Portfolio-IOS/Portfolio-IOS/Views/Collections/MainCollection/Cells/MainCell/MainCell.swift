@@ -14,7 +14,7 @@ class MainCell: UICollectionViewCell , MainCellDelegate{
    
     // MARK: - variables & Outlets
     @IBOutlet weak var menuCollection: MenuCollection!
-    var mainDelegate : mainCollectionDelegate?
+    var mainCollectionDelegate : MainCollectionDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,7 +22,7 @@ class MainCell: UICollectionViewCell , MainCellDelegate{
         menuCollection.initCollection()
     }
     internal func scrollMainToIndex(index: IndexPath) {
-        mainDelegate?.scrollMainToIndex(index: index)
+        mainCollectionDelegate?.scrollMainToIndex(index: index)
     }
 
 }

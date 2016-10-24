@@ -8,17 +8,18 @@
 
 import UIKit
 //protocole to performe actions
-protocol mainCollectionDelegate {
+protocol MainCollectionDelegate {
     func scrollMainToIndex(index : IndexPath)
     func scrollToFirstCell()
 }
-class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate , mainCollectionDelegate{
+class MainCollection: UICollectionView , UICollectionViewDataSource , UICollectionViewDelegate , MainCollectionDelegate{
     
     
     //MARK : Variables
     var menuDataSource  = [UIColor]()
     var flowLayou : UICollectionViewFlowLayout!
     var mainCell = UINib(nibName: "MainCell", bundle:nil)
+    var aboutCell = UINib(nibName: "AboutCell", bundle:nil)
     
     //
     func initCollection(){
@@ -28,6 +29,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.flowLayou.scrollDirection = .horizontal
         self.collectionViewLayout = flowLayou
         self.register(mainCell, forCellWithReuseIdentifier: "MainCell")
+        self.register(aboutCell, forCellWithReuseIdentifier: "AboutCell")
         self.backgroundColor = UIColor.white
         
     }
@@ -37,10 +39,38 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     }
     //
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
-        cell.mainDelegate = self
-        cell.backgroundColor = UIColor.red
-        return cell
+        
+        //
+        switch indexPath.row {
+        case 0:
+            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+            cell.mainCollectionDelegate = self
+            return cell
+            
+        case 1:
+            let cell : AboutCell = dequeueReusableCell(withReuseIdentifier: "AboutCell", for: indexPath) as! AboutCell
+            cell.mainCollectionDelegate = self
+            return cell
+            
+        case 2:
+            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+            cell.mainCollectionDelegate = self
+            return cell
+            
+        case 3:
+            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+            cell.mainCollectionDelegate = self
+            return cell
+            
+        case 4:
+            let cell : MainCell = dequeueReusableCell(withReuseIdentifier: "MainCell", for: indexPath) as! MainCell
+            cell.mainCollectionDelegate = self
+            return cell
+            
+        default:
+            return UICollectionViewCell()
+        }
+        
     }
     //
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -57,7 +87,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     
     // MARK: - Delegate implementations
     func scrollMainToIndex(index: IndexPath) {
-        self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+        self.scrollToItem(at: IndexPath(row: index.row + 1, section: index.section), at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
     //
     func scrollToFirstCell(){
