@@ -22,7 +22,7 @@ struct TableArrays {
     //
     static let projectsDataSource = [SharedModel(title: "  M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "  Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "  Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "  Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
     //
-    static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
+    static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "/abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
     //,ContactModel(image : "" ,link : "+216 23 736 912")
 }
 struct BaseArrays {
@@ -32,7 +32,7 @@ struct LongTexts {
     //
     static let AboutText = "Software engineer with through hand-on experience in mobile development IOS and Android. Supportive and enthusiastic team player dedicated to streamlining process and efficiently resolving project issues. Willing to learn more about mobile apps and more about its systems."
     //
-    static let MbankingDesc = "A banking application, that allows users to check their accounts, to make transactions between accounts and third party accounts. \n \n To confirm online payments and other features that gives to the user a direct access to his bank anywhere."
+    static let MbankingDesc = "A banking application, that allows users to check their accounts, to make transactions between accounts and third party accounts. \n \n It allows to confirm online payments and other features that gives to the user a direct access to his bank anywhere."
     //
     static let DooleshDesc = "Whether traveling on vacation or business trip for a few days or weeks. Doolesh be your inspiration to discover Tunisia,\n \n  as loved and lived by Tunisians: a wide choice of restaurants, good shopping addresses, relaxing spa and steam proposals, unusual walks, ideas for cultural outings ."
     //
