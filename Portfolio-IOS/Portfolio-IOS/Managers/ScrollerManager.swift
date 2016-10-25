@@ -11,7 +11,8 @@ class ScrollerManager {
     
     //MARK: - Variables
     var scrollingProtocole : MainCollectionDelegate? = nil
-    
+    var currentIndex : IndexPath?
+    //
     // MARK: singleton declaration
     class var sharedManager: ScrollerManager {
         struct Singleton {

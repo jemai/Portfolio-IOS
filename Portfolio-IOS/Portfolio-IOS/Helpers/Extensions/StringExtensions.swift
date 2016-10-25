@@ -51,13 +51,13 @@ extension String {
     }
 
     //replace string
-    func replace(_ string:String, replacement:String) -> String {
+    func replace(string:String, replacement:String) -> String {
         return replacingOccurrences(of: string, with: replacement)
     }
 
     //remove white space
     func removeWhitespace() -> String {
-        return self.replace(" ", replacement: "")
+        return self.replace(string: " ", replacement: "")
     }
  
     // MARK: - Height of text according ti frame width and text font

@@ -21,13 +21,13 @@ class NavigationManager {
         return Singleton.instance
     }
     
-    func pushViewController(viewController : BaseVC){
+    func pushViewController(viewController : UIViewController){
         if let navigation = self.naviGationProtocole {
             navigation.protocolPushViewController(vc: viewController)
         }
     }
     //
-    func presentViewController(viewController : BaseVC, animated : Bool){
+    func presentViewController(viewController : UIViewController, animated : Bool){
         if let navigation = self.naviGationProtocole {
             navigation.protocolPresentViewController(vc: viewController ,animated: animated)
         }

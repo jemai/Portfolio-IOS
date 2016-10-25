@@ -37,6 +37,7 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
     }
     //
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        ScrollerManager.sharedManager.currentIndex = indexPath
         ScrollerManager.sharedManager.scrollMainToIndex(index: indexPath)
     }
     //

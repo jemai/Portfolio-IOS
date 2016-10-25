@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsVC: BaseVC {
+class DetailsVC: UIViewController {
     // MARK: - variables & outlets
     var model : SharedModel?
     //
@@ -19,7 +19,7 @@ class DetailsVC: BaseVC {
         super.viewDidLoad()
         initViewController()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,4 +33,11 @@ class DetailsVC: BaseVC {
         }
     }
 
+    @IBAction func popViewActionButton(_ sender: AnyObject) {
+        self.dismiss(animated: true) { 
+            if let index = ScrollerManager.sharedManager.currentIndex {
+                ScrollerManager.sharedManager.scrollMainToIndex(index: index)
+            }
+        }
+    }
 }

@@ -22,8 +22,6 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
         self.separatorStyle = .none
     }
     //
-    
-    //
     // MARK: - RELOAD DATASROUCE
     func reloadDataSource(){
         self.reloadData()
@@ -51,7 +49,6 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
         
         let details = DetailsVC(nibName: "DetailsVC", bundle: nil)
         details.model = tableDataSource[indexPath.row]
-        NavigationManager.sharedManager.pushViewController(viewController: details)
+        NavigationManager.sharedManager.presentViewController(viewController: details, animated: true)
     }
-   
 }

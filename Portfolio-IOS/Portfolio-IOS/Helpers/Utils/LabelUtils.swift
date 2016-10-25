@@ -16,7 +16,7 @@ struct LabelUtils{
      *  LabelUtils
      */
     
-    static func initLabelLineBreakMode(_ label : UILabel ,lineNumber : Int) {
+    static func initLabelLineBreakMode(label : UILabel ,lineNumber : Int) {
         label.lineBreakMode = NSLineBreakMode.byWordWrapping
         label.numberOfLines = lineNumber
     }

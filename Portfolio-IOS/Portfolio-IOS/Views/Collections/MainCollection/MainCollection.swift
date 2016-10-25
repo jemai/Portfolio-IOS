@@ -48,7 +48,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     }
     //
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+        //
         //
         switch indexPath.row {
         case 0:
@@ -90,11 +90,13 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     
     // MARK: - Delegate implementations
     func scrollMainToIndex(index: IndexPath) {
-        self.scrollToItem(at: IndexPath(row: index.row + 1, section: index.section), at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+        let indexpath = IndexPath(row: index.row + 1, section: index.section)
+        self.scrollToItem(at: indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
     //
     func scrollToFirstCell(){
         let index = IndexPath(row: 0, section: 0)
+        ScrollerManager.sharedManager.currentIndex = index
         self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
 

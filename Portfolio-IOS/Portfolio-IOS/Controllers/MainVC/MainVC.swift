@@ -10,9 +10,10 @@ import UIKit
 
 // MARK: - Navigation protocole
 protocol NaviGationProtocole{
-    func protocolPushViewController(vc : BaseVC)
-    func protocolPresentViewController(vc : BaseVC , animated : Bool)
+    func protocolPushViewController(vc : UIViewController)
+    func protocolPresentViewController(vc : UIViewController , animated : Bool)
 }
+
 
 class MainVC: BaseVC , NaviGationProtocole{
 
@@ -23,7 +24,6 @@ class MainVC: BaseVC , NaviGationProtocole{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isTranslucent = true
         self.initViewController()
         NavigationManager.sharedManager.naviGationProtocole = self
         home.initWithShadow()
@@ -34,18 +34,19 @@ class MainVC: BaseVC , NaviGationProtocole{
         // Dispose of any resources that can be recreated.
 
     }
-
+    
     // MARK: - Initializers
     func initViewController(){
         self.mainCollection.initCollection()
     }
     
     
-    func protocolPushViewController(vc : BaseVC){
-        self.navigationController?.pushViewController(vc, animated: true)
+    
+    func protocolPushViewController(vc : UIViewController){
+        self.showDetailViewController(vc, sender: nil)
     }
-    func protocolPresentViewController(vc : BaseVC, animated : Bool){
-        self.navigationController?.present(vc, animated: animated, completion: nil)
+    func protocolPresentViewController(vc : UIViewController, animated : Bool){
+        self.present(vc, animated: animated, completion: nil)
     }
     @IBAction func backToMainCellAction(_ sender: AnyObject) {
         ScrollerManager.sharedManager.scrollToFirstCell()
