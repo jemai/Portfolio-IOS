@@ -25,7 +25,9 @@ struct TableArrays {
     static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
     //,ContactModel(image : "" ,link : "+216 23 736 912")
 }
-
+struct BaseArrays {
+    static let TitlesArray = ["Home","About","Projects","Contact","Hobbies"]
+}
 struct LongTexts {
     //
     static let AboutText = "Software engineer with through hand-on experience in mobile development IOS and Android. Supportive and enthusiastic team player dedicated to streamlining process and efficiently resolving project issues. Willing to learn more about mobile apps and more about its systems."

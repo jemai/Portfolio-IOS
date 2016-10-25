@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="home" destination="5ow-VC-TBQ" id="pZR-r9-V7L"/>
                 <outlet property="mainCollection" destination="cyv-ac-4AW" id="Wjh-IW-YXG"/>
+                <outlet property="titleLab" destination="fqO-tu-Wme" id="FQD-2T-6ZN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,6 +28,12 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqO-tu-Wme">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.90196078431372551" green="0.68627450980392157" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ow-VC-TBQ">
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="s5d-TR-FKj"/>
@@ -40,12 +47,16 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fqO-tu-Wme" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1PL-dX-sSo"/>
                 <constraint firstAttribute="bottom" secondItem="5ow-VC-TBQ" secondAttribute="bottom" constant="16" id="Jgi-Gz-38H"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nsv-g0-4lO"/>
+                <constraint firstAttribute="bottom" secondItem="fqO-tu-Wme" secondAttribute="bottom" constant="27" id="aXY-hN-hdl"/>
+                <constraint firstItem="fqO-tu-Wme" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="e4Y-3c-QZ3"/>
                 <constraint firstAttribute="trailing" secondItem="5ow-VC-TBQ" secondAttribute="trailing" constant="16" id="fn8-DD-mUm"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fyz-5M-BxA"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="rST-oV-rnF"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="s20-oV-mSa"/>
+                <constraint firstItem="fqO-tu-Wme" firstAttribute="centerY" secondItem="5ow-VC-TBQ" secondAttribute="centerY" id="wta-XR-nOP"/>
             </constraints>
             <point key="canvasLocation" x="102.5" y="77.5"/>
         </view>

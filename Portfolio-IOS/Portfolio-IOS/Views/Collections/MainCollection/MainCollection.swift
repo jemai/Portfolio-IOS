@@ -92,12 +92,18 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
     // MARK: - Delegate implementations
     func scrollMainToIndex(index: IndexPath) {
         let indexpath = IndexPath(row: index.row + 1, section: index.section)
+        //setting the title
+        NavigationManager.sharedManager.setTitle(index: indexpath)
+        //
         self.scrollToItem(at: indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
     //
     func scrollToFirstCell(){
         let index = IndexPath(row: 0, section: 0)
         ScrollerManager.sharedManager.currentIndex = index
+        //
+        NavigationManager.sharedManager.setTitle(index: index)
+        //
         self.scrollToItem(at: index, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
     }
 

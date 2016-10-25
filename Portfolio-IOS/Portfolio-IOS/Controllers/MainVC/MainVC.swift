@@ -12,6 +12,7 @@ import UIKit
 protocol NaviGationProtocole{
     func protocolPushViewController(vc : UIViewController)
     func protocolPresentViewController(vc : UIViewController , animated : Bool)
+    func setTitle(index : IndexPath)
 }
 
 
@@ -20,13 +21,14 @@ class MainVC: BaseVC , NaviGationProtocole{
     // MARK: - Variables and outlets
     @IBOutlet weak var mainCollection: MainCollection!
     @IBOutlet weak var home: UIButton!
+    @IBOutlet weak var titleLab: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initViewController()
         NavigationManager.sharedManager.naviGationProtocole = self
-        home.initWithShadow()
+        home.addWhiteShadow()
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,10 +40,11 @@ class MainVC: BaseVC , NaviGationProtocole{
     // MARK: - Initializers
     func initViewController(){
         self.mainCollection.initCollection()
+        self.titleLab.text = BaseArrays.TitlesArray[0]
     }
     
     
-    
+    // MARK: - Implementations
     func protocolPushViewController(vc : UIViewController){
         self.showDetailViewController(vc, sender: nil)
     }
@@ -51,4 +54,9 @@ class MainVC: BaseVC , NaviGationProtocole{
     @IBAction func backToMainCellAction(_ sender: AnyObject) {
         ScrollerManager.sharedManager.scrollToFirstCell()
     }
+    //
+    func setTitle(index : IndexPath){
+        self.titleLab.text = BaseArrays.TitlesArray[index.row]
+    }
+
 }

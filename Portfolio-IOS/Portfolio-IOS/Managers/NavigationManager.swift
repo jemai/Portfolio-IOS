@@ -32,4 +32,8 @@ class NavigationManager {
             navigation.protocolPresentViewController(vc: viewController ,animated: animated)
         }
     }
+    //
+    func setTitle(index : IndexPath){
+        self.naviGationProtocole?.setTitle(index: index)
+    }
 }
