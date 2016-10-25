@@ -25,6 +25,11 @@ class DetailsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        if let index = ScrollerManager.sharedManager.currentIndex {
+            ScrollerManager.sharedManager.scrollMainToIndex(index: index)
+        }
+    }
    // MARK: - Initializers
     func initViewController(){
         if let model = self.model {
@@ -34,10 +39,6 @@ class DetailsVC: UIViewController {
     }
 
     @IBAction func popViewActionButton(_ sender: AnyObject) {
-        self.dismiss(animated: true) { 
-            if let index = ScrollerManager.sharedManager.currentIndex {
-                ScrollerManager.sharedManager.scrollMainToIndex(index: index)
-            }
-        }
+        self.dismiss(animated: true)
     }
 }
