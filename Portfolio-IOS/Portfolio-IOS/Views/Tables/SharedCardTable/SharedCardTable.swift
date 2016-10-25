@@ -50,7 +50,7 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
         return UITableViewCell()    }
     //
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.frame.height/2.2
+        return self.frame.height/2
     }
     //
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

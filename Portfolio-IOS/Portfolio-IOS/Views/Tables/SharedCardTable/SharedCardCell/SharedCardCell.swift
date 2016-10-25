@@ -16,7 +16,7 @@ class SharedCardCell: UITableViewCell {
     //
     @IBOutlet weak var holder: UIView!
     //
-    var project : SharedModel?
+    var model : SharedModel?
     //
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -32,9 +32,16 @@ class SharedCardCell: UITableViewCell {
     }
     
     func initCell(model : SharedModel){
-        self.project = model
+        self.model = model
         self.mainImage.image = UIImage(named: model.imageName)
         self.titleLabel.text = model.title.uppercased()
     }
     
+    @IBAction func showDetails(_ sender: AnyObject) {
+        
+        let details = DetailsVC(nibName: "DetailsVC", bundle: nil)
+        details.model = self.model
+        NavigationManager.sharedManager.presentViewController(viewController: details, animated: true)
+
+    }
 }

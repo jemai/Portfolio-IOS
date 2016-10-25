@@ -44,12 +44,12 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-uR-REs">
-                    <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="jTM-CQ-Fq3"/>
                         <constraint firstAttribute="width" constant="46" id="vCA-Eu-QmM"/>
                     </constraints>
-                    <state key="normal" image="ic_navbar_dissmiss"/>
+                    <state key="normal" image="ic_close"/>
                     <connections>
                         <action selector="popViewActionButton:" destination="-1" eventType="touchUpInside" id="SUb-ap-xmu"/>
                     </connections>
@@ -75,6 +75,6 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_navbar_dissmiss" width="22" height="22"/>
+        <image name="ic_close" width="388" height="388"/>
     </resources>
 </document>
