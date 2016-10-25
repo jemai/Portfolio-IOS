@@ -19,9 +19,15 @@ class ContactTable : UITableView , UITableViewDelegate , UITableViewDataSource {
         //
         self.register(UINib(nibName: "ContactTableCell", bundle: nil), forCellReuseIdentifier: "ContactTableCell")
         self.separatorStyle = .none
+        initBackground()
     }
     //
-    
+    func initBackground(){
+        self.backgroundView = nil
+        let view = UIView()
+        view.backgroundColor = ColorConstants.ContactBackground
+        self.backgroundView = view
+    }
     //
     // MARK: - RELOAD DATASROUCE
     func reloadDataSource(){

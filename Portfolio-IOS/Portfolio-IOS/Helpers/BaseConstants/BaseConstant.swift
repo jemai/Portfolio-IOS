@@ -6,7 +6,12 @@
 //  Copyright © 2016 Abdelhak Jemaii. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct ColorConstants {
+    static let AppBackground  = UIColor(hexString: "#D5D5D5")
+    static let ContactBackground  = UIColor(hexString: "#9C959D")
+}
 
 struct CollectionsArrays {
     static let menuDataSource = [MenuModel(title: "About",image: "ic_about"),MenuModel(title: "Projects",image: "ic_project"),MenuModel(title: "Contact",image: "ic_contact"),MenuModel(title: "Hobbies",image: "ic_hobbie")]

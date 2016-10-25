@@ -23,7 +23,9 @@ class MenuCollection:  UICollectionView , UICollectionViewDataSource , UICollect
         //
         self.dataSource = self
         self.delegate = self
-        self.register(menuCell, forCellWithReuseIdentifier: "MenuCell")        
+        self.register(menuCell, forCellWithReuseIdentifier: "MenuCell")
+        self.backgroundColor = ColorConstants.AppBackground
+
     }
     //
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

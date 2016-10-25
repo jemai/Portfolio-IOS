@@ -28,6 +28,13 @@ extension UIView {
         self.layer.shadowOpacity = 0.5
         self.layer.shadowRadius = 3
     }
+    //
+    func addWhiteShadow(){
+        self.layer.shadowColor = UIColor.white.cgColor
+        self.layer.shadowOffset = CGSize.zero
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 3
+    }
 }
 
 // MARK: - AnimationExtentions

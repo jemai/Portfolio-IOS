@@ -18,7 +18,8 @@ class ContactTableCell: UITableViewCell {
         super.awakeFromNib()
         self.selectionStyle = .none
         self.backgroundColor = UIColor.white
-        self.mainImage.initWithShadow()
+        self.mainImage.addWhiteShadow()
+        self.backgroundColor = ColorConstants.ContactBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -29,6 +30,6 @@ class ContactTableCell: UITableViewCell {
     // MARK: - Init
     func initCell(contact : ContactModel){
         self.mainImage.image = UIImage(named: contact.imageName)
-        self.mainLabel.text = contact.link
+        self.mainLabel.text = contact.link.uppercased()
     }
 }

@@ -20,13 +20,21 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
         //
         self.register(UINib(nibName: "SharedCardCell", bundle: nil), forCellReuseIdentifier: "SharedCardCell")
         self.separatorStyle = .none
+        //
+        initBackground()
     }
     //
     // MARK: - RELOAD DATASROUCE
     func reloadDataSource(){
         self.reloadData()
     }
-    
+    //
+    func initBackground(){
+        let view = UIView()
+        view.backgroundColor = ColorConstants.AppBackground
+        self.backgroundView = view
+    }
+
     
     //MARK: - table view implementations
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
