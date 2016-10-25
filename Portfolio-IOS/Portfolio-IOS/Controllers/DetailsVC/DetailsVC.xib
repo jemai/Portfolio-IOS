@@ -23,7 +23,7 @@
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65V-EA-xcO"/>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-vb-V1t">
-                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29900323275862067" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.13418642241379311" colorSpace="calibratedRGB"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,7 +44,6 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-uR-REs">
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="jTM-CQ-Fq3"/>
                         <constraint firstAttribute="width" constant="46" id="vCA-Eu-QmM"/>
@@ -75,6 +74,6 @@
         </view>
     </objects>
     <resources>
-        <image name="ic_close" width="388" height="388"/>
+        <image name="ic_close" width="43" height="43"/>
     </resources>
 </document>
