@@ -17,11 +17,13 @@ class MenuCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.clear
+        holder.backgroundColor = UIColor.clear
+        mainImage.initWithShadow()
     }
     // MARK: - Initializer
     func initCell(menuModel : MenuModel){
-        self.titleLabel.text = menuModel.title
+        self.titleLabel.text = menuModel.title.uppercased()
         self.mainImage.image = UIImage(named: menuModel.imageName)
     }
 

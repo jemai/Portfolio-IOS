@@ -18,18 +18,19 @@ struct TableArrays {
     static let projectsDataSource = [SharedModel(title: "M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
     //
     static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
+    //,ContactModel(image : "" ,link : "+216 23 736 912")
 }
 
 struct LongTexts {
     //
     static let AboutText = "Software engineer with through hand-on experience in mobile development IOS and Android. Supportive and enthusiastic team player dedicated to streamlining process and efficiently resolving project issues. Willing to learn more about mobile apps and more about its systems."
     //
-    static let MbankingDesc = ""
+    static let MbankingDesc = "A banking application, that allows users to check their accounts, to make transactions between accounts and third party accounts. \n To confirm online payments and other features that gives to the user a direct access to his bank anywhere."
     //
-    static let DooleshDesc = ""
+    static let DooleshDesc = "Whether traveling on vacation or business trip for a few days or weeks. Doolesh be your inspiration to discover Tunisia, as loved and lived by Tunisians: a wide choice of restaurants, good shopping addresses, relaxing spa and steam proposals, unusual walks, ideas for cultural outings ."
     //
-    static let YoupiDesc = ""
+    static let YoupiDesc = "An application to manage residents on a building it helps to alert a problem, to fix an issue with the building and to manage the access of the residents."
     //
-    static let LitDesc = ""
+    static let LitDesc = "A tinder like application that use the like to match mechanisme, with a great UI/UX and a strong native chat using the socket.io. \n a user can manage his profile, filtring by distance or age ... and can chat with other users and send images"
     
 }

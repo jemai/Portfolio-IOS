@@ -20,7 +20,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WGQ-i2-SeO"/>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1H-qG-sHe">
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -30,7 +30,7 @@
                             <constraint firstItem="t1H-qG-sHe" firstAttribute="width" secondItem="jqL-z5-uwH" secondAttribute="width" multiplier="0.8" id="3vL-e2-Rq2"/>
                             <constraint firstItem="WGQ-i2-SeO" firstAttribute="centerX" secondItem="jqL-z5-uwH" secondAttribute="centerX" id="KEl-qO-BZf"/>
                             <constraint firstItem="WGQ-i2-SeO" firstAttribute="width" secondItem="jqL-z5-uwH" secondAttribute="width" multiplier="0.8" id="WoT-oP-AKW"/>
-                            <constraint firstItem="t1H-qG-sHe" firstAttribute="top" secondItem="WGQ-i2-SeO" secondAttribute="bottom" multiplier="1.1" id="cE6-XL-Nje"/>
+                            <constraint firstItem="t1H-qG-sHe" firstAttribute="top" secondItem="WGQ-i2-SeO" secondAttribute="bottom" id="cE6-XL-Nje"/>
                             <constraint firstItem="t1H-qG-sHe" firstAttribute="height" secondItem="jqL-z5-uwH" secondAttribute="height" multiplier="0.2" id="e56-Yt-REg"/>
                             <constraint firstItem="WGQ-i2-SeO" firstAttribute="top" secondItem="jqL-z5-uwH" secondAttribute="top" constant="8" id="g0X-R6-MLt"/>
                             <constraint firstItem="t1H-qG-sHe" firstAttribute="centerX" secondItem="jqL-z5-uwH" secondAttribute="centerX" id="tdV-YZ-PyZ"/>

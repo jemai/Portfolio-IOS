@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Portfolio_IOS" customModuleProvider="target">
             <connections>
+                <outlet property="home" destination="5ow-VC-TBQ" id="pZR-r9-V7L"/>
                 <outlet property="mainCollection" destination="cyv-ac-4AW" id="Wjh-IW-YXG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

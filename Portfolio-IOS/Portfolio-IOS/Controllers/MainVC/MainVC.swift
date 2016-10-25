@@ -18,6 +18,7 @@ class MainVC: BaseVC , NaviGationProtocole{
 
     // MARK: - Variables and outlets
     @IBOutlet weak var mainCollection: MainCollection!
+    @IBOutlet weak var home: UIButton!
     
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class MainVC: BaseVC , NaviGationProtocole{
         self.navigationController?.navigationBar.isTranslucent = true
         self.initViewController()
         NavigationManager.sharedManager.naviGationProtocole = self
+        home.initWithShadow()
     }
 
     override func didReceiveMemoryWarning() {
