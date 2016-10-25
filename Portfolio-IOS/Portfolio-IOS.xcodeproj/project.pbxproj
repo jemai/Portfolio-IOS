@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C00D8C1B1DC0152000F0F4CF /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8C191DC0152000F0F4CF /* SplashScreenVC.swift */; };
+		C00D8C1C1DC0152000F0F4CF /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */; };
 		C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */; };
 		C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */; };
 		C069C0D81DBDFAF100F64DE9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */; };
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C00D8C191DC0152000F0F4CF /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
 		C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -158,6 +162,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C00D8C181DC0150F00F0F4CF /* SplashScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				C00D8C191DC0152000F0F4CF /* SplashScreenVC.swift */,
+				C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */,
+			);
+			path = SplashScreenVC;
+			sourceTree = "<group>";
+		};
 		C069C0CB1DBDFAF100F64DE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +308,7 @@
 		C0BD2D831DBD4E1000CC7D88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C00D8C181DC0150F00F0F4CF /* SplashScreenVC */,
 				C0BD2DD11DBEBAF000CC7D88 /* DetailsVC */,
 				C0BD2DA01DBD775F00CC7D88 /* BaseVC */,
 				C0BD2D8E1DBD4EA700CC7D88 /* MainVC */,
@@ -613,6 +627,7 @@
 				C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */,
 				C0BD2D811DBD4DFF00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C069C1201DBE415400F64DE9 /* SharedCardCell.xib in Resources */,
+				C00D8C1C1DC0152000F0F4CF /* SplashScreenVC.xib in Resources */,
 				C0BD2D921DBD4EE600CC7D88 /* MainVC.xib in Resources */,
 				C0BD2DC21DBEB60700CC7D88 /* ContactCell.xib in Resources */,
 				C069C1261DBE425600F64DE9 /* HobbiesCell.xib in Resources */,
@@ -654,6 +669,7 @@
 				C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */,
 				C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */,
 				C069C0DB1DBDFAF100F64DE9 /* DefaultUtils.swift in Sources */,
+				C00D8C1B1DC0152000F0F4CF /* SplashScreenVC.swift in Sources */,
 				C0BD2DD41DBEBB0800CC7D88 /* DetailsVC.swift in Sources */,
 				C0BD2D961DBD505600CC7D88 /* MainCollection.swift in Sources */,
 				C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */,

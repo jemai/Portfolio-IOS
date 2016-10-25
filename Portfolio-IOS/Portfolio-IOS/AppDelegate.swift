@@ -16,8 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let main = MainVC(nibName: "MainVC", bundle: nil)
-        self.window?.rootViewController = main
+        startSplashScreen()
         return true
     }
     
@@ -43,6 +42,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func startSplashScreen(){
+        if(self.window != nil){
+            let splashScreenVC = SplashScreenVC(nibName: "SplashScreenVC", bundle: nil)
+            self.window!.rootViewController = splashScreenVC
+        }
+    }
+    
+    func startMainApp(){
+        if(self.window != nil){
+            let main = MainVC(nibName: "MainVC", bundle: nil)
+            self.window?.rootViewController = main
+        }
+    }
+    
 }
 

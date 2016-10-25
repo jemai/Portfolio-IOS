@@ -64,7 +64,7 @@
                 <constraint firstItem="65V-EA-xcO" firstAttribute="top" secondItem="fbs-uR-REs" secondAttribute="bottom" id="Ulb-On-mqI"/>
                 <constraint firstItem="3rS-xj-3Lq" firstAttribute="centerX" secondItem="HFd-I8-hTl" secondAttribute="centerX" id="wMe-t0-EkP"/>
                 <constraint firstItem="HFd-I8-hTl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="yqS-oH-x5Y"/>
-                <constraint firstItem="HFd-I8-hTl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="zp7-W6-cCE"/>
+                <constraint firstItem="HFd-I8-hTl" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.35" id="zp7-W6-cCE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>

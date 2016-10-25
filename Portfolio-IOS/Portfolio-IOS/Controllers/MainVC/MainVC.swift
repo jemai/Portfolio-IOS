@@ -29,11 +29,20 @@ class MainVC: BaseVC , NaviGationProtocole{
         self.initViewController()
         NavigationManager.sharedManager.naviGationProtocole = self
         home.addWhiteShadow()
+        //
+        self.mainCollection.isHidden = true
+        //
+        self.mainCollection.showViewAnimated()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
 
     }
     

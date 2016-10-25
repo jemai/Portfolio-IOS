@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="524" height="446"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="524" height="446"/>
+                <frame key="frameInset" width="524" height="445"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9R-6h-pFP">
@@ -52,7 +52,7 @@
                             <constraint firstItem="MPA-Rz-qKI" firstAttribute="centerY" secondItem="H6i-ef-8A4" secondAttribute="centerY" id="mH0-aL-gHh"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="centerX" secondItem="C9R-6h-pFP" secondAttribute="centerX" id="oyv-GE-LdL"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="top" secondItem="kJB-NM-EEf" secondAttribute="bottom" id="vGU-R6-Ktd"/>
-                            <constraint firstItem="H6i-ef-8A4" firstAttribute="height" secondItem="C9R-6h-pFP" secondAttribute="height" multiplier="0.12" id="yEv-yd-aqp"/>
+                            <constraint firstItem="H6i-ef-8A4" firstAttribute="height" secondItem="C9R-6h-pFP" secondAttribute="height" multiplier="0.13" id="yEv-yd-aqp"/>
                         </constraints>
                     </view>
                 </subviews>
