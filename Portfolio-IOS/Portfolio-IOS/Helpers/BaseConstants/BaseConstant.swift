@@ -25,13 +25,13 @@ struct LongTexts {
     //
     static let AboutText = "Software engineer with through hand-on experience in mobile development IOS and Android. Supportive and enthusiastic team player dedicated to streamlining process and efficiently resolving project issues. Willing to learn more about mobile apps and more about its systems."
     //
-    static let MbankingDesc = "A banking application, that allows users to check their accounts, to make transactions between accounts and third party accounts. \n To confirm online payments and other features that gives to the user a direct access to his bank anywhere."
+    static let MbankingDesc = "A banking application, that allows users to check their accounts, to make transactions between accounts and third party accounts. \n \n To confirm online payments and other features that gives to the user a direct access to his bank anywhere."
     //
-    static let DooleshDesc = "Whether traveling on vacation or business trip for a few days or weeks. Doolesh be your inspiration to discover Tunisia, as loved and lived by Tunisians: a wide choice of restaurants, good shopping addresses, relaxing spa and steam proposals, unusual walks, ideas for cultural outings ."
+    static let DooleshDesc = "Whether traveling on vacation or business trip for a few days or weeks. Doolesh be your inspiration to discover Tunisia,\n \n  as loved and lived by Tunisians: a wide choice of restaurants, good shopping addresses, relaxing spa and steam proposals, unusual walks, ideas for cultural outings ."
     //
     static let YoupiDesc = "An application to manage residents on a building it helps to alert a problem, to fix an issue with the building and to manage the access of the residents."
     //
-    static let LitDesc = "A tinder like application that use the like to match mechanisme, with a great UI/UX and a strong native chat using the socket.io. \n a user can manage his profile, filtring by distance or age ... and can chat with other users and send images"
+    static let LitDesc = "A tinder like application that use the like to match mechanisme, with a great UI/UX and a strong native chat using the socket.io.\n \n A user can manage his profile, filtring by distance or age ... and can chat with other users and send images"
     //
     static let bboyDesc = "Since 2003 i loved the hip hop culture and the urban arts, i started practicing breakdance and in 2005 as a member of a bboy crew we organised our first show mixed with different styles of dances and it was a great success and a great experience."
     //
