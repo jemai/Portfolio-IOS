@@ -21,13 +21,20 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFd-I8-hTl">
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65V-EA-xcO"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65V-EA-xcO"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ID-vb-V1t">
+                            <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.52543103449999995" colorSpace="calibratedRGB"/>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="4ID-vb-V1t" firstAttribute="centerY" secondItem="65V-EA-xcO" secondAttribute="centerY" id="Bbq-8F-7dS"/>
+                        <constraint firstItem="4ID-vb-V1t" firstAttribute="centerX" secondItem="65V-EA-xcO" secondAttribute="centerX" id="Ish-7f-oLk"/>
                         <constraint firstItem="65V-EA-xcO" firstAttribute="centerY" secondItem="HFd-I8-hTl" secondAttribute="centerY" id="LXw-U6-C1M"/>
                         <constraint firstItem="65V-EA-xcO" firstAttribute="width" secondItem="HFd-I8-hTl" secondAttribute="width" id="OOo-DY-Ss0"/>
                         <constraint firstItem="65V-EA-xcO" firstAttribute="centerX" secondItem="HFd-I8-hTl" secondAttribute="centerX" id="gEv-KD-awi"/>
+                        <constraint firstItem="4ID-vb-V1t" firstAttribute="height" secondItem="65V-EA-xcO" secondAttribute="height" id="hOs-S8-N1O"/>
+                        <constraint firstItem="4ID-vb-V1t" firstAttribute="width" secondItem="65V-EA-xcO" secondAttribute="width" id="vth-IN-GkG"/>
                         <constraint firstItem="65V-EA-xcO" firstAttribute="height" secondItem="HFd-I8-hTl" secondAttribute="height" id="xz7-pd-Rae"/>
                     </constraints>
                 </view>
