@@ -27,9 +27,9 @@ class NavigationManager {
         }
     }
     //
-    func presentViewController(viewController : UIViewController, animated : Bool){
+    func presentViewController(viewController : BaseVC, animated : Bool){
         if let navigation = self.naviGationProtocole {
-            navigation.protocolPresentViewController(vc: viewController,animated: animated)
+            navigation.protocolPresentViewController(vc: viewController ,animated: animated)
         }
     }
 }

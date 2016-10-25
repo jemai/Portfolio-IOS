@@ -13,9 +13,9 @@ struct CollectionsArrays {
 }
 
 struct TableArrays {
-    static let hobbiesDataSource = [SharedModel(title: "A guitar player" ,image: "ic_paul_gilbert" ,description : ""),SharedModel(title: "A bboy",image: "ic_bboy",description : "")]
+    static let hobbiesDataSource = [SharedModel(title: "  A guitar player" ,image: "ic_paul_gilbert" ,description : LongTexts.guitarDesc),SharedModel(title: "  A bboy",image: "ic_bboy",description : LongTexts.bboyDesc)]
     //
-    static let projectsDataSource = [SharedModel(title: "M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
+    static let projectsDataSource = [SharedModel(title: "  M-Banking",image: "ic_m_banking" ,description : LongTexts.MbankingDesc),SharedModel(title: "  Love'nTouch",image: "ic_lit",description : LongTexts.LitDesc),SharedModel(title: "  Youpi",image: "ic_youpi",description : LongTexts.YoupiDesc),SharedModel(title: "  Doolesh",image: "ic_doolesh",description : LongTexts.DooleshDesc)]
     //
     static let contactDataSource = [ContactModel(image : "ic_fb" ,link : "/jemaii.abdelhak"),ContactModel(image : "ic_github" ,link : "/jemai"),ContactModel(image : "ic_google" ,link : "abdelhak.jemaii"),ContactModel(image : "ic_linkedin" ,link : "/jemai-abdelhak")]
     //,ContactModel(image : "" ,link : "+216 23 736 912")
@@ -32,5 +32,8 @@ struct LongTexts {
     static let YoupiDesc = "An application to manage residents on a building it helps to alert a problem, to fix an issue with the building and to manage the access of the residents."
     //
     static let LitDesc = "A tinder like application that use the like to match mechanisme, with a great UI/UX and a strong native chat using the socket.io. \n a user can manage his profile, filtring by distance or age ... and can chat with other users and send images"
-    
+    //
+    static let bboyDesc = "Since 2003 i loved the hip hop culture and the urban arts, i started practicing breakdance and in 2005 as a member of a bboy crew we organised our first show mixed with different styles of dances and it was a great success and a great experience."
+    //
+    static let guitarDesc = "I started playing guitar since 2014, it's just the perfect sound.\n For me art is everything and programming is a kind of genius art that uses intelligence to create and manipulate a UI."
 }

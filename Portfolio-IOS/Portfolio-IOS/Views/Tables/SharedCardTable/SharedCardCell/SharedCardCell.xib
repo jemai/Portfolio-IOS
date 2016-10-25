@@ -29,18 +29,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bro-An-oCs">
                                 <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.52543103448275863" colorSpace="calibratedRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_more" translatesAutoresizingMaskIntoConstraints="NO" id="1gP-a3-g7W"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="width" secondItem="C9R-6h-pFP" secondAttribute="width" id="6Yy-Vb-MJx"/>
                             <constraint firstItem="kJB-NM-EEf" firstAttribute="leading" secondItem="C9R-6h-pFP" secondAttribute="leading" id="9WK-cG-OrV"/>
+                            <constraint firstItem="1gP-a3-g7W" firstAttribute="height" secondItem="H6i-ef-8A4" secondAttribute="height" id="AKx-wd-4hy"/>
                             <constraint firstAttribute="bottom" secondItem="H6i-ef-8A4" secondAttribute="bottom" constant="8.5" id="CM2-H5-Xil"/>
                             <constraint firstItem="bro-An-oCs" firstAttribute="height" secondItem="kJB-NM-EEf" secondAttribute="height" id="CTD-zQ-riD"/>
                             <constraint firstAttribute="trailing" secondItem="kJB-NM-EEf" secondAttribute="trailing" id="Hpk-l1-RPU"/>
                             <constraint firstItem="bro-An-oCs" firstAttribute="centerX" secondItem="kJB-NM-EEf" secondAttribute="centerX" id="K58-2N-P9c"/>
+                            <constraint firstItem="1gP-a3-g7W" firstAttribute="width" secondItem="H6i-ef-8A4" secondAttribute="width" multiplier="0.1" id="Lhu-9E-vZe"/>
                             <constraint firstItem="bro-An-oCs" firstAttribute="centerY" secondItem="kJB-NM-EEf" secondAttribute="centerY" id="bHA-OM-ktP"/>
                             <constraint firstItem="kJB-NM-EEf" firstAttribute="top" secondItem="C9R-6h-pFP" secondAttribute="top" id="h31-1B-ZIM"/>
+                            <constraint firstItem="1gP-a3-g7W" firstAttribute="centerX" secondItem="H6i-ef-8A4" secondAttribute="centerX" multiplier="1.9" id="hAu-Qu-myn"/>
                             <constraint firstItem="bro-An-oCs" firstAttribute="width" secondItem="kJB-NM-EEf" secondAttribute="width" id="jLb-2B-Czy"/>
+                            <constraint firstItem="1gP-a3-g7W" firstAttribute="centerY" secondItem="H6i-ef-8A4" secondAttribute="centerY" id="lMU-Ch-Yla"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="centerX" secondItem="C9R-6h-pFP" secondAttribute="centerX" id="oyv-GE-LdL"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="top" secondItem="kJB-NM-EEf" secondAttribute="bottom" id="vGU-R6-Ktd"/>
                             <constraint firstItem="H6i-ef-8A4" firstAttribute="height" secondItem="C9R-6h-pFP" secondAttribute="height" multiplier="0.12" id="yEv-yd-aqp"/>
@@ -62,4 +67,7 @@
             <point key="canvasLocation" x="-13" y="-19"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="ic_more" width="44" height="44"/>
+    </resources>
 </document>

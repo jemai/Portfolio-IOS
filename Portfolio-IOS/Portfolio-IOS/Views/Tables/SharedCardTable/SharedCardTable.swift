@@ -50,6 +50,7 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let details = DetailsVC(nibName: "DetailsVC", bundle: nil)
+        details.model = tableDataSource[indexPath.row]
         NavigationManager.sharedManager.pushViewController(viewController: details)
     }
    

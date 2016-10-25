@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 // MARK: - height of Label from text
 extension UILabel {
     func heightWithWidth(_ width: CGFloat) -> CGFloat {

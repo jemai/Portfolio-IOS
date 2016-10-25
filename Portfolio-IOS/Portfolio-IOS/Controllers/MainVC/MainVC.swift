@@ -10,8 +10,8 @@ import UIKit
 
 // MARK: - Navigation protocole
 protocol NaviGationProtocole{
-    func protocolPushViewController(vc : UIViewController)
-    func protocolPresentViewController(vc : UIViewController , animated : Bool)
+    func protocolPushViewController(vc : BaseVC)
+    func protocolPresentViewController(vc : BaseVC , animated : Bool)
 }
 
 class MainVC: BaseVC , NaviGationProtocole{
@@ -41,10 +41,10 @@ class MainVC: BaseVC , NaviGationProtocole{
     }
     
     
-    func protocolPushViewController(vc : UIViewController){
+    func protocolPushViewController(vc : BaseVC){
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    func protocolPresentViewController(vc : UIViewController, animated : Bool){
+    func protocolPresentViewController(vc : BaseVC, animated : Bool){
         self.navigationController?.present(vc, animated: animated, completion: nil)
     }
     @IBAction func backToMainCellAction(_ sender: AnyObject) {
