@@ -19,7 +19,7 @@ class ContactTableCell: UITableViewCell {
         self.selectionStyle = .none
         self.backgroundColor = UIColor.white
         self.mainImage.addWhiteShadow()
-        self.backgroundColor = ColorConstants.ContactBackground
+        self.backgroundColor = ColorConstants.DarkBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

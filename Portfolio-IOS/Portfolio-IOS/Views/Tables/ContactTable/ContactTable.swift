@@ -25,7 +25,7 @@ class ContactTable : UITableView , UITableViewDelegate , UITableViewDataSource {
     func initBackground(){
         self.backgroundView = nil
         let view = UIView()
-        view.backgroundColor = ColorConstants.ContactBackground
+        view.backgroundColor = ColorConstants.DarkBackground
         self.backgroundView = view
     }
     //

@@ -8,9 +8,15 @@
 
 import UIKit
 
+struct AppUserConfig {
+    static let UserName = "Abdelhak Jemaii"
+    static let AppName = "Portfolio"
+}
+
 struct ColorConstants {
     static let AppBackground  = UIColor(hexString: "#D5D5D5")
-    static let ContactBackground  = UIColor(hexString: "#9C959D")
+    static let DarkBackground  = UIColor(hexString: "#9C959D")
+    static let AppYellow  = UIColor(hexString: "#E4AE44")
 }
 
 struct CollectionsArrays {
