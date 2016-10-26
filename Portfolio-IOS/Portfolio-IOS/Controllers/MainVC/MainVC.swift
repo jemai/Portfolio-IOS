@@ -19,6 +19,8 @@ protocol NaviGationProtocole{
 class MainVC: BaseVC , NaviGationProtocole{
 
     // MARK: - Variables and outlets
+    @IBOutlet weak var mainControle: UIPageControl!
+    //
     @IBOutlet weak var mainCollection: MainCollection!
     @IBOutlet weak var home: UIButton!
     @IBOutlet weak var titleLab: UILabel!
@@ -50,6 +52,9 @@ class MainVC: BaseVC , NaviGationProtocole{
     func initViewController(){
         self.mainCollection.initCollection()
         self.titleLab.text = BaseArrays.TitlesArray[0]
+        self.mainControle.addWhiteShadow()
+        self.mainControle.numberOfPages = BaseArrays.TitlesArray.count
+        self.mainControle.currentPage = 0
     }
     
     
@@ -66,6 +71,7 @@ class MainVC: BaseVC , NaviGationProtocole{
     //
     func setTitle(index : IndexPath){
         self.titleLab.text = BaseArrays.TitlesArray[index.row]
+        self.mainControle.currentPage = index.row
     }
 
 }

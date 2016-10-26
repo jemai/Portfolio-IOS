@@ -29,10 +29,7 @@
 		C069C1251DBE425600F64DE9 /* HobbiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C1231DBE425600F64DE9 /* HobbiesCell.swift */; };
 		C069C1261DBE425600F64DE9 /* HobbiesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C069C1241DBE425600F64DE9 /* HobbiesCell.xib */; };
 		C0BD2D4F1DBD4D6A00CC7D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */; };
-		C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */; };
-		C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */; };
 		C0BD2D561DBD4D6A00CC7D88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D551DBD4D6A00CC7D88 /* Assets.xcassets */; };
-		C0BD2D591DBD4D6A00CC7D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D571DBD4D6A00CC7D88 /* LaunchScreen.storyboard */; };
 		C0BD2D641DBD4D6B00CC7D88 /* Portfolio_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D631DBD4D6B00CC7D88 /* Portfolio_IOSTests.swift */; };
 		C0BD2D6F1DBD4D6B00CC7D88 /* Portfolio_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BD2D6E1DBD4D6B00CC7D88 /* Portfolio_IOSUITests.swift */; };
 		C0BD2D811DBD4DFF00CC7D88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0BD2D7D1DBD4DFF00CC7D88 /* LaunchScreen.storyboard */; };
@@ -101,10 +98,7 @@
 		C069C1241DBE425600F64DE9 /* HobbiesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HobbiesCell.xib; sourceTree = "<group>"; };
 		C0BD2D4B1DBD4D6A00CC7D88 /* Portfolio-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Portfolio-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C0BD2D531DBD4D6A00CC7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0BD2D551DBD4D6A00CC7D88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0BD2D581DBD4D6A00CC7D88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0BD2D5A1DBD4D6A00CC7D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0BD2D5F1DBD4D6B00CC7D88 /* Portfolio-IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Portfolio-IOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BD2D631DBD4D6B00CC7D88 /* Portfolio_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio_IOSTests.swift; sourceTree = "<group>"; };
@@ -269,10 +263,7 @@
 				C0BD2D8B1DBD4E1000CC7D88 /* Views */,
 				C0BD2D7C1DBD4DFF00CC7D88 /* Base.lproj */,
 				C0BD2D4E1DBD4D6A00CC7D88 /* AppDelegate.swift */,
-				C0BD2D501DBD4D6A00CC7D88 /* ViewController.swift */,
-				C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */,
 				C0BD2D551DBD4D6A00CC7D88 /* Assets.xcassets */,
-				C0BD2D571DBD4D6A00CC7D88 /* LaunchScreen.storyboard */,
 				C0BD2D5A1DBD4D6A00CC7D88 /* Info.plist */,
 			);
 			path = "Portfolio-IOS";
@@ -621,7 +612,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C069C0F21DBE053200F64DE9 /* ProjectCollectionCell.xib in Resources */,
-				C0BD2D591DBD4D6A00CC7D88 /* LaunchScreen.storyboard in Resources */,
 				C0BD2D821DBD4DFF00CC7D88 /* Main.storyboard in Resources */,
 				C0BD2DAA1DBD78A200CC7D88 /* MenuCell.xib in Resources */,
 				C0BD2DBD1DBD9C3100CC7D88 /* AboutCell.xib in Resources */,
@@ -634,7 +624,6 @@
 				C0BD2D561DBD4D6A00CC7D88 /* Assets.xcassets in Resources */,
 				C0BD2DCE1DBEB6F400CC7D88 /* ContactTableCell.xib in Resources */,
 				C0BD2D9F1DBD513000CC7D88 /* MainCell.xib in Resources */,
-				C0BD2D541DBD4D6A00CC7D88 /* Main.storyboard in Resources */,
 				C0BD2DD51DBEBB0800CC7D88 /* DetailsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,7 +664,6 @@
 				C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */,
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,
 				C0BD2DC11DBEB60700CC7D88 /* ContactCell.swift in Sources */,
-				C0BD2D511DBD4D6A00CC7D88 /* ViewController.swift in Sources */,
 				C0BD2DC61DBEB67400CC7D88 /* ContactTable.swift in Sources */,
 				C069C0DC1DBDFAF100F64DE9 /* FileUtils.swift in Sources */,
 				C069C1191DBE3F5200F64DE9 /* SharedModel.swift in Sources */,
@@ -728,22 +716,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C0BD2D521DBD4D6A00CC7D88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0BD2D531DBD4D6A00CC7D88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C0BD2D571DBD4D6A00CC7D88 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0BD2D581DBD4D6A00CC7D88 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		C0BD2D7D1DBD4DFF00CC7D88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

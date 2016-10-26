@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="home" destination="5ow-VC-TBQ" id="pZR-r9-V7L"/>
                 <outlet property="mainCollection" destination="cyv-ac-4AW" id="Wjh-IW-YXG"/>
+                <outlet property="mainControle" destination="dRu-20-MB0" id="qP3-Ty-so6"/>
                 <outlet property="titleLab" destination="fqO-tu-Wme" id="FQD-2T-6ZN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -44,16 +45,23 @@
                         <action selector="backToMainCellAction:" destination="-1" eventType="touchUpInside" id="WYA-8Z-oZC"/>
                     </connections>
                 </button>
+                <pageControl opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dRu-20-MB0">
+                    <color key="currentPageIndicatorTintColor" red="0.89411764709999997" green="0.68235294120000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="fqO-tu-Wme" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1PL-dX-sSo"/>
                 <constraint firstAttribute="bottom" secondItem="5ow-VC-TBQ" secondAttribute="bottom" constant="16" id="Jgi-Gz-38H"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Nsv-g0-4lO"/>
                 <constraint firstAttribute="bottom" secondItem="fqO-tu-Wme" secondAttribute="bottom" constant="27" id="aXY-hN-hdl"/>
+                <constraint firstItem="dRu-20-MB0" firstAttribute="leading" secondItem="fqO-tu-Wme" secondAttribute="leading" constant="44" id="b49-5I-INs"/>
+                <constraint firstItem="dRu-20-MB0" firstAttribute="centerY" secondItem="fqO-tu-Wme" secondAttribute="centerY" id="e08-T6-yau"/>
                 <constraint firstItem="fqO-tu-Wme" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="e4Y-3c-QZ3"/>
                 <constraint firstAttribute="trailing" secondItem="5ow-VC-TBQ" secondAttribute="trailing" constant="16" id="fn8-DD-mUm"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fyz-5M-BxA"/>
+                <constraint firstItem="dRu-20-MB0" firstAttribute="height" secondItem="fqO-tu-Wme" secondAttribute="height" id="gYg-lw-kRP"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="rST-oV-rnF"/>
                 <constraint firstItem="cyv-ac-4AW" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="s20-oV-mSa"/>
                 <constraint firstItem="fqO-tu-Wme" firstAttribute="centerY" secondItem="5ow-VC-TBQ" secondAttribute="centerY" id="wta-XR-nOP"/>
