@@ -22,24 +22,24 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen1" translatesAutoresizingMaskIntoConstraints="NO" id="wz7-fT-htv"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9r-dD-3Gn">
-                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="30"/>
+                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="40"/>
                     <color key="textColor" red="0.89411764709999997" green="0.68235294120000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz8-BQ-k1b">
-                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="25"/>
+                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <constraints>
                 <constraint firstItem="wz7-fT-htv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.4" id="63s-LS-nzN"/>
+                <constraint firstItem="rz8-BQ-k1b" firstAttribute="top" secondItem="s9r-dD-3Gn" secondAttribute="bottom" constant="28" id="A9a-4A-ksa"/>
                 <constraint firstItem="s9r-dD-3Gn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="Bb9-G1-jRy"/>
                 <constraint firstItem="rz8-BQ-k1b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FdR-5u-73T"/>
-                <constraint firstAttribute="bottom" secondItem="rz8-BQ-k1b" secondAttribute="bottom" constant="44" id="Voz-Bj-cCF"/>
                 <constraint firstItem="wz7-fT-htv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="WNW-MJ-kep"/>
                 <constraint firstItem="wz7-fT-htv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g54-Ec-DqL"/>
-                <constraint firstItem="wz7-fT-htv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.07" id="nYO-cl-BnW"/>
+                <constraint firstItem="wz7-fT-htv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.05" id="nYO-cl-BnW"/>
                 <constraint firstItem="s9r-dD-3Gn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xM7-r3-5hC"/>
             </constraints>
         </view>
