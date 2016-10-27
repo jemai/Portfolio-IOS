@@ -13,11 +13,10 @@ class BaseVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController?.navigationBar.isTranslucent = false
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        self.navigationController?.navigationBar.isTranslucent = false
     }
 }

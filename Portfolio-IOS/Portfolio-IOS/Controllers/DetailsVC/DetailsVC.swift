@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailsVC: UIViewController {
+class DetailsVC: BaseVC {
     // MARK: - variables & outlets
     var model : SharedModel?
     //
