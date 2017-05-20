@@ -41,7 +41,7 @@ class MainCollection: UICollectionView , UICollectionViewDataSource , UICollecti
         self.isScrollEnabled = false
         self.isPagingEnabled = true
         ScrollerManager.sharedManager.scrollingProtocole = self
-        self.backgroundColor = ColorConstants.AppBackground
+        self.backgroundColor = ColorConstants.DarkBackground
     }
     //
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

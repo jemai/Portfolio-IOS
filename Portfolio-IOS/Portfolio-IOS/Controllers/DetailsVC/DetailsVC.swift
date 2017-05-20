@@ -17,7 +17,7 @@ class DetailsVC: BaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = ColorConstants.AppBackground
+        self.view.backgroundColor = ColorConstants.DarkBackground
         self.mainImage.initWithShadow()
         initViewController()
     }

@@ -22,7 +22,7 @@ class SharedCardCell: UITableViewCell {
         super.awakeFromNib()
         self.selectionStyle = .none
         holder.initWithShadow()
-        self.backgroundColor = ColorConstants.AppBackground
+        self.backgroundColor = ColorConstants.DarkBackground
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -31,7 +31,7 @@ class SharedCardTable : UITableView , UITableViewDelegate , UITableViewDataSourc
     //
     func initBackground(){
         let view = UIView()
-        view.backgroundColor = ColorConstants.AppBackground
+        view.backgroundColor = ColorConstants.DarkBackground
         self.backgroundView = view
     }
 
