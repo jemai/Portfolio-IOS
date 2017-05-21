@@ -58,6 +58,7 @@ extension MainVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
     }
     //
     func showCurrentPageCollection(){
+        if !currentPageMenu.isHidden { return }
         currentPageMenu.isHidden = false
 
         for cell in currentPageMenu.visibleCells {
