@@ -47,7 +47,10 @@ extension MainVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        mainCollection.scrollMainToIndex(index: indexPath)
+        //
+        ScrollerManager.sharedManager.currentIndex = indexPath
+        ScrollerManager.sharedManager.scrollMainToIndex(index: indexPath)
+        //
         Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (Timer) in
             self.hideCurrentPageMenu()
             Timer.invalidate()
