@@ -20,7 +20,7 @@ struct ColorConstants {
 }
 
 struct CollectionsArrays {
-    static let menuDataSource = [MenuModel(title: "About",image: "AboutMeIcon"),MenuModel(title: "Projects",image: "homeProjectsIcon"),MenuModel(title: "Contact",image: "ic_contact"),MenuModel(title: "Hobbies",image: "ic_hobbie")]
+    static let menuDataSource = [MenuModel(title: "About",image: "AboutMeIcon"),MenuModel(title: "Projects",image: "homeProjectsIcon"),MenuModel(title: "Contact",image: "contactMeIcon"),MenuModel(title: "Hobbies",image: "hobbiesIcon")]
 }
 
 struct TableArrays {
