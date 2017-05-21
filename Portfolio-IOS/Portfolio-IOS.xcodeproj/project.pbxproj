@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C00D8C1B1DC0152000F0F4CF /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00D8C191DC0152000F0F4CF /* SplashScreenVC.swift */; };
 		C00D8C1C1DC0152000F0F4CF /* SplashScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */; };
+		C05711981ED1F51E007F761B /* MainVC+CurrentPageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05711971ED1F51E007F761B /* MainVC+CurrentPageTable.swift */; };
+		C057119B1ED1F646007F761B /* CurrentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057119A1ED1F646007F761B /* CurrentPageCell.swift */; };
 		C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */; };
 		C069C0D71DBDFAF100F64DE9 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */; };
 		C069C0D81DBDFAF100F64DE9 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */; };
@@ -77,6 +79,8 @@
 /* Begin PBXFileReference section */
 		C00D8C191DC0152000F0F4CF /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenVC.xib; sourceTree = "<group>"; };
+		C05711971ED1F51E007F761B /* MainVC+CurrentPageTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainVC+CurrentPageTable.swift"; sourceTree = "<group>"; };
+		C057119A1ED1F646007F761B /* CurrentPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentPageCell.swift; sourceTree = "<group>"; };
 		C069C0CC1DBDFAF100F64DE9 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C069C0CD1DBDFAF100F64DE9 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C069C0CE1DBDFAF100F64DE9 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -163,6 +167,14 @@
 				C00D8C1A1DC0152000F0F4CF /* SplashScreenVC.xib */,
 			);
 			path = SplashScreenVC;
+			sourceTree = "<group>";
+		};
+		C05711991ED1F628007F761B /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				C057119A1ED1F646007F761B /* CurrentPageCell.swift */,
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 		C069C0CB1DBDFAF100F64DE9 /* Extensions */ = {
@@ -370,6 +382,7 @@
 		C0BD2D8B1DBD4E1000CC7D88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C05711991ED1F628007F761B /* CollectionCells */,
 				C0BD2D8C1DBD4E8600CC7D88 /* Collections */,
 				C0BD2D8D1DBD4E8600CC7D88 /* Tables */,
 			);
@@ -398,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				C0BD2D8F1DBD4EE600CC7D88 /* MainVC.swift */,
+				C05711971ED1F51E007F761B /* MainVC+CurrentPageTable.swift */,
 				C0BD2D901DBD4EE600CC7D88 /* MainVC.xib */,
 			);
 			path = MainVC;
@@ -654,6 +668,7 @@
 				C069C1211DBE415400F64DE9 /* SharedCardTable.swift in Sources */,
 				C069C0D61DBDFAF100F64DE9 /* StringExtensions.swift in Sources */,
 				C069C1251DBE425600F64DE9 /* HobbiesCell.swift in Sources */,
+				C05711981ED1F51E007F761B /* MainVC+CurrentPageTable.swift in Sources */,
 				C069C0E11DBDFB2800F64DE9 /* NavigationManager.swift in Sources */,
 				C0BD2DA61DBD782100CC7D88 /* MenuCollection.swift in Sources */,
 				C069C0D91DBDFAF100F64DE9 /* UILabelExtensions.swift in Sources */,
@@ -661,6 +676,7 @@
 				C069C0DB1DBDFAF100F64DE9 /* DefaultUtils.swift in Sources */,
 				C00D8C1B1DC0152000F0F4CF /* SplashScreenVC.swift in Sources */,
 				C0BD2DD41DBEBB0800CC7D88 /* DetailsVC.swift in Sources */,
+				C057119B1ED1F646007F761B /* CurrentPageCell.swift in Sources */,
 				C0BD2D961DBD505600CC7D88 /* MainCollection.swift in Sources */,
 				C0BD2DAE1DBD7B8700CC7D88 /* BaseConstant.swift in Sources */,
 				C0BD2DA21DBD778200CC7D88 /* BaseVC.swift in Sources */,

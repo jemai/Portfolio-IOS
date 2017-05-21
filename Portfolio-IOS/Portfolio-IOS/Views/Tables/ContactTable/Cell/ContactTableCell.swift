@@ -25,7 +25,7 @@ class ContactTableCell: UITableViewCell {
         mainImage.isUserInteractionEnabled = true
         mainImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(wobble)))
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -57,5 +57,6 @@ class ContactTableCell: UITableViewCell {
         }
         isAnimating = !isAnimating
     }
-
 }
+
+

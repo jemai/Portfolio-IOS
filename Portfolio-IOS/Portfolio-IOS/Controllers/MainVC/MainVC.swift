@@ -24,7 +24,19 @@ class MainVC: BaseVC , NaviGationProtocole{
     @IBOutlet weak var mainCollection: MainCollection!
     @IBOutlet weak var home: UIButton!
     @IBOutlet weak var titleLab: UILabel!
-    
+    //
+    lazy var currentPageMenu: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.minimumLineSpacing = 8
+        layout.minimumInteritemSpacing = 8
+        //
+        let currentPage = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        currentPage.translatesAutoresizingMaskIntoConstraints = false
+        currentPage.contentMode = .center
+        currentPage.isHidden = true
+        return currentPage
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,17 +47,14 @@ class MainVC: BaseVC , NaviGationProtocole{
         self.mainCollection.isHidden = true
         //
         self.mainCollection.showViewAnimated()
+        //
+        setupCurrentPageMenu()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         
-
     }
     
     // MARK: - Initializers
@@ -55,6 +64,9 @@ class MainVC: BaseVC , NaviGationProtocole{
         self.mainControle.addWhiteShadow()
         self.mainControle.numberOfPages = BaseArrays.TitlesArray.count
         self.mainControle.currentPage = 0
+        //
+        self.titleLab.isUserInteractionEnabled = true
+        self.titleLab.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showCurrentPageCollection)))
     }
     
     
@@ -72,6 +84,18 @@ class MainVC: BaseVC , NaviGationProtocole{
     func setTitle(index : IndexPath){
         self.titleLab.text = BaseArrays.TitlesArray[index.row]
         self.mainControle.currentPage = index.row
+        //
+        selectCurrentPage(at: index)
     }
-
+    //
+    func selectCurrentPage(at index : IndexPath) {
+        if index.item == 0 {
+            guard let indexPath = currentPageMenu.indexPathsForSelectedItems?.first else { return  }
+            currentPageMenu.deselectItem(at: indexPath, animated: false)
+            return
+        }
+        //
+        let indexPath = IndexPath(item: index.item - 1, section: index.section)
+        self.currentPageMenu.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+    }
 }

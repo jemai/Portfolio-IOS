@@ -23,6 +23,9 @@ class SharedCardCell: UITableViewCell {
         self.selectionStyle = .none
         holder.initWithShadow()
         self.backgroundColor = ColorConstants.DarkBackground
+        self.titleLabel.backgroundColor = ColorConstants.AppYellow
+        self.titleLabel.layer.borderWidth = 1
+        self.titleLabel.layer.borderColor = UIColor.black.cgColor
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
