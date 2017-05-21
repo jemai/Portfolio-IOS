@@ -61,4 +61,21 @@ extension UIView {
         })
         
     }
+    
+    func fadeIn(){
+        self.alpha -= 10
+        self.isHidden = false
+        UIView.animate(withDuration: 0.2) { 
+            self.alpha += 10
+        }
+    }
+    func fadeOut(){
+        UIView.animate(withDuration: 0.2, animations: { 
+            self.alpha -= 10
+
+        }) { (Bool) in
+            self.isHidden = true
+            self.alpha += 10
+        }
+    }
 }

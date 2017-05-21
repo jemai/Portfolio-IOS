@@ -79,6 +79,8 @@ class MainVC: BaseVC , NaviGationProtocole{
     }
     @IBAction func backToMainCellAction(_ sender: AnyObject) {
         ScrollerManager.sharedManager.scrollToFirstCell()
+        if currentPageMenu.isHidden { return }
+        hideCurrentPageMenu()
     }
     //
     func setTitle(index : IndexPath){

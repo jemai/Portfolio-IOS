@@ -59,7 +59,7 @@ extension MainVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
     //
     func showCurrentPageCollection(){
         if !currentPageMenu.isHidden { return }
-        currentPageMenu.isHidden = false
+        currentPageMenu.fadeIn()
 
         for cell in currentPageMenu.visibleCells {
             cell.showViewAnimated()
@@ -70,7 +70,7 @@ extension MainVC : UICollectionViewDelegate , UICollectionViewDataSource , UICol
         for cell in currentPageMenu.visibleCells {
             cell.hideViewAnimated()
         }
-        currentPageMenu.isHidden = true
+        currentPageMenu.fadeOut()
     }
 }
 
