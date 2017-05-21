@@ -42,7 +42,7 @@ class ContactTableCell: UITableViewCell {
         if !isAnimating {
             mainImage.layer.removeAllAnimations()
             let anim = CAKeyframeAnimation( keyPath:"transform" )
-            let rot = 10 * M_PI / 180.0
+            let rot = 15 * M_PI / 180.0
             anim.values = [
                 NSValue( caTransform3D:CATransform3DMakeRotation(CGFloat(rot) , 0, 0, 1) ),
                 NSValue( caTransform3D:CATransform3DMakeRotation(CGFloat(-rot) , 0, 0, 1) )
